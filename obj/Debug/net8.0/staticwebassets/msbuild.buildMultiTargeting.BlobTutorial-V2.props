@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BlobTutorial-V2.props" />
+</Project>
