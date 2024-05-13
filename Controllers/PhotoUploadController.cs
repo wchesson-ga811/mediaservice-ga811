@@ -4,6 +4,7 @@ using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using BlobTutorial_V2.Models;
 using MetadataExtractor;
+using MetadataExtractor.Formats.Tiff;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Storage;
 using Microsoft.Azure.Storage.Blob;
@@ -29,6 +30,12 @@ namespace BlobTutorial_V2.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("Photo upload controller is up and running");
+        }
+
         [HttpPost]
         public async Task<IActionResult> UploadPhoto(IFormFile photo)
         {
@@ -38,65 +45,65 @@ namespace BlobTutorial_V2.Controllers
             {
                 _logger.LogInformation($"Received backend request to upload photo at {now}");
 
-                _logger.LogInformation("Scanning for malware");
+                // _logger.LogInformation("Scanning for malware");
 
                 if (photo == null || photo.Length == 0)
                 {
                     return BadRequest("No photo found");
                 }
 
-                IActionResult isFileClean = await ScanPhotoWithClamAV(photo);
+                // IActionResult isFileClean = await ScanPhotoWithClamAV(photo);
 
-                if (isFileClean is OkObjectResult)
+                // if (isFileClean is OkObjectResult)
+                // {
+                // Retrieve the connection string for the Azure Blob Storage
+                string connectionString =
+                    _configuration.GetConnectionString("ConnectionStrings:AzureMediaService")
+                    ?? string.Empty;
+
+                var blobServiceClient = new BlobServiceClient(
+                    new Uri("https://mediaservicega811.blob.core.windows.net/"),
+                    new DefaultAzureCredential()
+                );
+
+                var containerClient = blobServiceClient.GetBlobContainerClient("images");
+
+                // Create a unique name for the photo
+                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+
+                await using var stream = photo.OpenReadStream();
+                var uploaded = await containerClient.UploadBlobAsync(photo.FileName, stream);
+
+                BlobClient blobClient;
+
+                if (uploaded != null)
                 {
-                    // Retrieve the connection string for the Azure Blob Storage
-                    string connectionString =
-                        _configuration.GetConnectionString("ConnectionStrings:AzureMediaService")
-                        ?? string.Empty;
-
-                    var blobServiceClient = new BlobServiceClient(
-                        new Uri("https://mediaservicega811.blob.core.windows.net/"),
-                        new DefaultAzureCredential()
-                    );
-
-                    var containerClient = blobServiceClient.GetBlobContainerClient("images");
-
-                    // Create a unique name for the photo
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
-
-                    await using var stream = photo.OpenReadStream();
-                    var uploaded = await containerClient.UploadBlobAsync(photo.FileName, stream);
-
-                    BlobClient blobClient;
-
-                    if (uploaded != null)
-                    {
-                        blobClient = containerClient.GetBlobClient(fileName);
-                        Console.WriteLine($"Uploaded photo to {blobClient.Uri} at {now}");
-                    }
-                    else
-                    {
-                        return BadRequest("Backend: failed to upload photo");
-                    }
-
-                    var exifMetadata = ExtractExifMetadata(photo);
-
-                    exifMetadata.Add("Uri", blobClient.Uri.ToString());
-
-                    return Ok(exifMetadata);
-                }
-                else if (isFileClean is UnauthorizedObjectResult)
-                {
-                    return BadRequest(
-                        "There was malware detected in your photo. Please submit another photo to complete your request."
-                    );
+                    blobClient = containerClient.GetBlobClient(fileName);
+                    Console.WriteLine($"Uploaded photo to {blobClient.Uri} at {now}");
                 }
                 else
                 {
-                    return BadRequest(
-                        "There was an error scanning your photo for malware. Please try another photo or at a later time."
-                    );
+                    return BadRequest("Backend: failed to upload photo");
                 }
+
+                var exifMetadata = ExtractExifMetadata(photo);
+
+                // exifMetadata.Add("Uri", blobClient.Uri.ToString());
+
+                return Ok(exifMetadata);
+                // }
+                // else if (isFileClean is UnauthorizedObjectResult)
+                // {
+                //     return BadRequest(
+                //         "There was malware detected in your photo. Please submit another photo to complete your request."
+                //     );
+                // }
+                // else
+                // {
+                //     return BadRequest(
+                //         "There was an error scanning your photo for malware. Please try another photo or at a later time."
+                //     );
+                // }
 
                 //error handling
             }
@@ -104,14 +111,18 @@ namespace BlobTutorial_V2.Controllers
             {
                 _logger.LogError(ex.ToString());
 
-                var errorResponse = new { message = ex.Message, exception = ex.ToString() };
+                var errorResponse = new { message = ex.StackTrace, exception = ex.ToString() };
 
                 return StatusCode(StatusCodes.Status500InternalServerError, errorResponse);
             }
         }
 
-        private Dictionary<string, string> ExtractExifMetadata(IFormFile photo)
+        [HttpPost("extract-exif-metadata")]
+        public async Task<Dictionary<string, string>> ExtractExifMetadata(IFormFile photo)
         {
+            // return Ok();
+            _logger.LogInformation("Extracting EXIF metadata from photo");
+
             using (var stream = photo.OpenReadStream())
             {
                 // Ensure the stream is positioned at the beginning of the file
@@ -121,10 +132,30 @@ namespace BlobTutorial_V2.Controllers
                 IEnumerable<MetadataExtractor.Directory> directories =
                     ImageMetadataReader.ReadMetadata(stream);
 
+                directories
+                    .SelectMany(directory => directory.Tags)
+                    .ToList()
+                    .ForEach(tag =>
+                    {
+                        
+                        string snakeCaseName = tag.Name.Replace(" ", ""); // Trims white spaces and other whitespace characters
+
+                        _logger.LogInformation($"{snakeCaseName}");
+                    });
+
                 // Extract EXIF tags and values
+                // var exifMetadata = directories
+                //     .SelectMany(directory => directory.Tags)
+
                 var exifMetadata = directories
                     .SelectMany(directory => directory.Tags)
-                    .ToDictionary(tag => tag.Name, tag => tag.Description);
+                    .GroupBy(tag => tag.Name) // Group tags by name
+                    .ToDictionary(
+                        group => group.Key, // Use the tag name as the dictionary key
+                        group => string.Join("; ", group.Select(tag => tag.Description)) // Concatenate descriptions
+                    );
+
+                _logger.LogInformation("EXIF metadata extracted successfully");
 
                 return exifMetadata;
             }
@@ -159,17 +190,17 @@ namespace BlobTutorial_V2.Controllers
             }
         }
 
-        // [HttpPost("scan-file")]
-        private async Task<IActionResult> ScanPhotoWithClamAV(IFormFile file)
+        [HttpPost("scan-file")]
+        public async Task<IActionResult> ScanPhotoWithClamAV(IFormFile photo)
         {
-            if (file == null || file.Length == 0)
+            if (photo == null || photo.Length == 0)
                 return Content("file not selected");
 
             var ms = new MemoryStream();
-            file.OpenReadStream().CopyTo(ms);
+            photo.OpenReadStream().CopyTo(ms);
             byte[] fileBytes = ms.ToArray();
 
-            _logger.LogInformation("ClamAV received request to scan {0}", file.FileName);
+            _logger.LogInformation("ClamAV received request to scan {0}", photo.FileName);
             // var clam = new ClamClient("localhost", 3310);
 
             var scanResult = await clam.SendAndScanFileAsync(fileBytes);
@@ -182,6 +213,7 @@ namespace BlobTutorial_V2.Controllers
                         "The file is clean! ScanResult:{1}",
                         scanResult.RawResult
                     );
+                    Console.WriteLine("The file is clean!");
                     return Ok(true);
 
                 case ClamScanResults.VirusDetected:
@@ -213,7 +245,7 @@ namespace BlobTutorial_V2.Controllers
                     return BadRequest("Unknown scan result while scaning the file!");
             }
 
-            _logger.LogInformation("ClamAV scan completed for file {0}", file.FileName);
+            _logger.LogInformation("ClamAV scan completed for file {0}", photo.FileName);
 
             // Add a return statement at the end of the method
             return BadRequest("Could not scan the file.");

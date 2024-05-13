@@ -1,0 +1,450 @@
+2024-04-22 15:02:28.167 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-22 15:02:28.212 -04:00 [DBG] Hosting starting
+2024-04-22 15:02:28.236 -04:00 [INF] Now listening on: http://localhost:5111
+2024-04-22 15:02:28.238 -04:00 [DBG] Loaded hosting startup assembly BlobTutorial-V2
+2024-04-22 15:02:28.240 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-22 15:02:28.240 -04:00 [INF] Hosting environment: Development
+2024-04-22 15:02:28.241 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\BlobTutorial-V2\image-upload-backend
+2024-04-22 15:02:28.241 -04:00 [DBG] Hosting started
+2024-04-22 15:02:38.641 -04:00 [DBG] Connection id "0HN32VR3ME87A" accepted.
+2024-04-22 15:02:38.642 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.643 -04:00 [DBG] Connection id "0HN32VR3ME87A" started.
+2024-04-22 15:02:38.658 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - multipart/form-data; boundary=----formdata-undici-002595856492 11376011
+2024-04-22 15:02:38.663 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-22 15:02:38.675 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/scan-file'
+2024-04-22 15:02:38.679 -04:00 [DBG] Endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)' with route pattern 'api/photoupload/scan-file' is valid for the request path '/api/photoupload/scan-file'
+2024-04-22 15:02:38.680 -04:00 [DBG] Request matched endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:02:38.687 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-22 15:02:38.688 -04:00 [INF] Executing endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:02:38.699 -04:00 [INF] Route matched with {action = "ScanPhotoWithClamAV", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScanPhotoWithClamAV(Microsoft.AspNetCore.Http.IFormFile) on controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2).
+2024-04-22 15:02:38.702 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-22 15:02:38.703 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-04-22 15:02:38.705 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-22 15:02:38.707 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-22 15:02:38.708 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-22 15:02:38.710 -04:00 [DBG] Executing controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:02:38.711 -04:00 [DBG] Executed controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:02:38.716 -04:00 [DBG] Connection id "0HN32VR3ME87A", Request id "0HN32VR3ME87A:00000001": started reading request body.
+2024-04-22 15:02:38.725 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.731 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.733 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.735 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.737 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.738 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.741 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.744 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.747 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.749 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.750 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.753 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.755 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.757 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.759 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.761 -04:00 [DBG] Connection id "0HN32VR3ME87A" paused.
+2024-04-22 15:02:38.763 -04:00 [DBG] Connection id "0HN32VR3ME87A" resumed.
+2024-04-22 15:02:38.766 -04:00 [DBG] Connection id "0HN32VR3ME87A", Request id "0HN32VR3ME87A:00000001": done reading request body.
+2024-04-22 15:02:38.773 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:02:38.775 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name '' in request data ...
+2024-04-22 15:02:38.777 -04:00 [DBG] No files found in the request to bind the model to.
+2024-04-22 15:02:38.777 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:02:38.778 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:02:38.779 -04:00 [DBG] Attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:02:38.782 -04:00 [DBG] Done attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:02:38.784 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-04-22 15:02:38.785 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-04-22 15:02:38.786 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-22 15:02:38.788 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-22 15:02:38.789 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-04-22 15:02:38.791 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-04-22 15:02:38.792 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-22 15:02:38.812 -04:00 [INF] Executed action BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2) in 101.3608ms
+2024-04-22 15:02:38.814 -04:00 [INF] Executed endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:02:38.816 -04:00 [DBG] Connection id "0HN32VR3ME87A" completed keep alive response.
+2024-04-22 15:02:38.820 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - 400 null application/problem+json; charset=utf-8 161.9421ms
+2024-04-22 15:02:43.686 -04:00 [DBG] Connection id "0HN32VR3ME87A" received FIN.
+2024-04-22 15:02:43.690 -04:00 [DBG] Connection id "0HN32VR3ME87A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:02:43.694 -04:00 [DBG] Connection id "0HN32VR3ME87A" disconnecting.
+2024-04-22 15:02:43.698 -04:00 [DBG] Connection id "0HN32VR3ME87A" stopped.
+2024-04-22 15:04:15.140 -04:00 [DBG] Connection id "0HN32VR3ME87B" accepted.
+2024-04-22 15:04:15.141 -04:00 [DBG] Connection id "0HN32VR3ME87B" started.
+2024-04-22 15:04:15.143 -04:00 [DBG] Connection id "0HN32VR3ME87C" accepted.
+2024-04-22 15:04:15.144 -04:00 [DBG] Connection id "0HN32VR3ME87C" started.
+2024-04-22 15:04:15.145 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5111/swagger/index.html - null null
+2024-04-22 15:04:15.148 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-04-22 15:04:15.149 -04:00 [DBG] Request did not match any endpoints
+2024-04-22 15:04:15.173 -04:00 [DBG] Connection id "0HN32VR3ME87B" completed keep alive response.
+2024-04-22 15:04:15.174 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5111/swagger/index.html - 200 null text/html;charset=utf-8 29.1083ms
+2024-04-22 15:04:15.316 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5111/swagger/v1/swagger.json - null null
+2024-04-22 15:04:15.319 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-04-22 15:04:15.321 -04:00 [DBG] Request did not match any endpoints
+2024-04-22 15:04:15.363 -04:00 [DBG] Connection id "0HN32VR3ME87B" completed keep alive response.
+2024-04-22 15:04:15.365 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.264ms
+2024-04-22 15:04:22.292 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - multipart/form-data; boundary=----WebKitFormBoundary3zAiREaOAVB3RY1D 11376024
+2024-04-22 15:04:22.297 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.300 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/scan-file'
+2024-04-22 15:04:22.304 -04:00 [DBG] Endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)' with route pattern 'api/photoupload/scan-file' is valid for the request path '/api/photoupload/scan-file'
+2024-04-22 15:04:22.309 -04:00 [DBG] Request matched endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:04:22.312 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-22 15:04:22.316 -04:00 [INF] Executing endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:04:22.321 -04:00 [INF] Route matched with {action = "ScanPhotoWithClamAV", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScanPhotoWithClamAV(Microsoft.AspNetCore.Http.IFormFile) on controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2).
+2024-04-22 15:04:22.327 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-22 15:04:22.331 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-04-22 15:04:22.335 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-22 15:04:22.343 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-22 15:04:22.349 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-22 15:04:22.355 -04:00 [DBG] Executing controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:04:22.360 -04:00 [DBG] Executed controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:04:22.364 -04:00 [DBG] Connection id "0HN32VR3ME87B", Request id "0HN32VR3ME87B:00000003": started reading request body.
+2024-04-22 15:04:22.383 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.391 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.403 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.411 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.424 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.430 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.441 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.450 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.463 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.469 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.478 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.483 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.490 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.493 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.499 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.506 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.515 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.521 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.530 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.535 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.545 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.553 -04:00 [DBG] Connection id "0HN32VR3ME87B" paused.
+2024-04-22 15:04:22.563 -04:00 [DBG] Connection id "0HN32VR3ME87B" resumed.
+2024-04-22 15:04:22.568 -04:00 [DBG] Connection id "0HN32VR3ME87B", Request id "0HN32VR3ME87B:00000003": done reading request body.
+2024-04-22 15:04:22.581 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:04:22.583 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'file' in request data ...
+2024-04-22 15:04:22.586 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:04:22.589 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:04:22.591 -04:00 [DBG] Attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:04:22.596 -04:00 [DBG] Done attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:04:22.644 -04:00 [INF] ClamAV received request to scan house.jpg
+2024-04-22 15:04:33.391 -04:00 [INF] Scan result: "Clean"
+2024-04-22 15:04:33.394 -04:00 [INF] The file is clean! ScanResult:stream: OK
+2024-04-22 15:04:33.397 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-22 15:04:33.403 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-22 15:04:33.406 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-04-22 15:04:33.409 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-04-22 15:04:33.411 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-04-22 15:04:33.416 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-04-22 15:04:33.423 -04:00 [INF] Executed action BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2) in 11068.3169ms
+2024-04-22 15:04:33.426 -04:00 [INF] Executed endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:04:33.429 -04:00 [DBG] Connection id "0HN32VR3ME87B" completed keep alive response.
+2024-04-22 15:04:33.436 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - 200 null application/json; charset=utf-8 11143.6108ms
+2024-04-22 15:05:16.746 -04:00 [DBG] Connection id "0HN32VR3ME87C" received FIN.
+2024-04-22 15:05:16.749 -04:00 [DBG] Connection id "0HN32VR3ME87C" disconnecting.
+2024-04-22 15:05:16.751 -04:00 [DBG] Connection id "0HN32VR3ME87C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:05:16.758 -04:00 [DBG] Connection id "0HN32VR3ME87C" stopped.
+2024-04-22 15:05:29.339 -04:00 [DBG] Connection id "0HN32VR3ME87D" accepted.
+2024-04-22 15:05:29.342 -04:00 [DBG] Connection id "0HN32VR3ME87D" started.
+2024-04-22 15:05:29.344 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - multipart/form-data; boundary=----formdata-undici-075596687841 10516558
+2024-04-22 15:05:29.353 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.354 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/scan-file'
+2024-04-22 15:05:29.359 -04:00 [DBG] Endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)' with route pattern 'api/photoupload/scan-file' is valid for the request path '/api/photoupload/scan-file'
+2024-04-22 15:05:29.363 -04:00 [DBG] Request matched endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:05:29.365 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-22 15:05:29.367 -04:00 [INF] Executing endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:05:29.369 -04:00 [INF] Route matched with {action = "ScanPhotoWithClamAV", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScanPhotoWithClamAV(Microsoft.AspNetCore.Http.IFormFile) on controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2).
+2024-04-22 15:05:29.373 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-22 15:05:29.377 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-04-22 15:05:29.381 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-22 15:05:29.384 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-22 15:05:29.387 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-22 15:05:29.390 -04:00 [DBG] Executing controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:05:29.392 -04:00 [DBG] Executed controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:05:29.394 -04:00 [DBG] Connection id "0HN32VR3ME87D", Request id "0HN32VR3ME87D:00000001": started reading request body.
+2024-04-22 15:05:29.404 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.408 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.414 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.417 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.423 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.427 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.432 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.436 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.442 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.450 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.458 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.461 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.466 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.471 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.477 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.479 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.484 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.487 -04:00 [DBG] Connection id "0HN32VR3ME87D" paused.
+2024-04-22 15:05:29.492 -04:00 [DBG] Connection id "0HN32VR3ME87D" resumed.
+2024-04-22 15:05:29.495 -04:00 [DBG] Connection id "0HN32VR3ME87D", Request id "0HN32VR3ME87D:00000001": done reading request body.
+2024-04-22 15:05:29.505 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:05:29.507 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name '' in request data ...
+2024-04-22 15:05:29.509 -04:00 [DBG] No files found in the request to bind the model to.
+2024-04-22 15:05:29.510 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:05:29.512 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:05:29.514 -04:00 [DBG] Attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:05:29.516 -04:00 [DBG] Done attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:05:29.518 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-04-22 15:05:29.520 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-04-22 15:05:29.521 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-22 15:05:29.526 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-22 15:05:29.527 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-04-22 15:05:29.531 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-04-22 15:05:29.534 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-22 15:05:29.536 -04:00 [INF] Executed action BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2) in 146.9473ms
+2024-04-22 15:05:29.539 -04:00 [INF] Executed endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:05:29.542 -04:00 [DBG] Connection id "0HN32VR3ME87D" completed keep alive response.
+2024-04-22 15:05:29.546 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - 400 null application/problem+json; charset=utf-8 202.2412ms
+2024-04-22 15:05:34.382 -04:00 [DBG] Connection id "0HN32VR3ME87D" received FIN.
+2024-04-22 15:05:34.387 -04:00 [DBG] Connection id "0HN32VR3ME87D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:05:34.392 -04:00 [DBG] Connection id "0HN32VR3ME87D" disconnecting.
+2024-04-22 15:05:34.396 -04:00 [DBG] Connection id "0HN32VR3ME87D" stopped.
+2024-04-22 15:06:45.134 -04:00 [DBG] Connection id "0HN32VR3ME87B" disconnecting.
+2024-04-22 15:06:45.137 -04:00 [DBG] Connection id "0HN32VR3ME87B" stopped.
+2024-04-22 15:06:45.139 -04:00 [DBG] Connection id "0HN32VR3ME87B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:23:10.779 -04:00 [INF] Application is shutting down...
+2024-04-22 15:23:10.780 -04:00 [DBG] Hosting stopping
+2024-04-22 15:23:10.790 -04:00 [DBG] Hosting stopped
+2024-04-22 15:23:15.394 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-04-22 15:23:15.437 -04:00 [DBG] Hosting starting
+2024-04-22 15:23:15.461 -04:00 [INF] Now listening on: http://localhost:5111
+2024-04-22 15:23:15.463 -04:00 [DBG] Loaded hosting startup assembly BlobTutorial-V2
+2024-04-22 15:23:15.464 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-22 15:23:15.465 -04:00 [INF] Hosting environment: Development
+2024-04-22 15:23:15.465 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\BlobTutorial-V2\image-upload-backend
+2024-04-22 15:23:15.466 -04:00 [DBG] Hosting started
+2024-04-22 15:23:17.418 -04:00 [DBG] Connection id "0HN3306KSB4AR" accepted.
+2024-04-22 15:23:17.419 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.420 -04:00 [DBG] Connection id "0HN3306KSB4AR" started.
+2024-04-22 15:23:17.435 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - multipart/form-data; boundary=----formdata-undici-075452307636 10516558
+2024-04-22 15:23:17.439 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-04-22 15:23:17.449 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/scan-file'
+2024-04-22 15:23:17.452 -04:00 [DBG] Endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)' with route pattern 'api/photoupload/scan-file' is valid for the request path '/api/photoupload/scan-file'
+2024-04-22 15:23:17.453 -04:00 [DBG] Request matched endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:23:17.459 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-22 15:23:17.460 -04:00 [INF] Executing endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:23:17.471 -04:00 [INF] Route matched with {action = "ScanPhotoWithClamAV", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScanPhotoWithClamAV(Microsoft.AspNetCore.Http.IFormFile) on controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2).
+2024-04-22 15:23:17.474 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-22 15:23:17.475 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-04-22 15:23:17.477 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-22 15:23:17.479 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-22 15:23:17.480 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-22 15:23:17.483 -04:00 [DBG] Executing controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:23:17.484 -04:00 [DBG] Executed controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:23:17.489 -04:00 [DBG] Connection id "0HN3306KSB4AR", Request id "0HN3306KSB4AR:00000001": started reading request body.
+2024-04-22 15:23:17.499 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.502 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.505 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.506 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.508 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.510 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.512 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.513 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.515 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.522 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.525 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.531 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.534 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.536 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.540 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.543 -04:00 [DBG] Connection id "0HN3306KSB4AR" paused.
+2024-04-22 15:23:17.545 -04:00 [DBG] Connection id "0HN3306KSB4AR" resumed.
+2024-04-22 15:23:17.547 -04:00 [DBG] Connection id "0HN3306KSB4AR", Request id "0HN3306KSB4AR:00000001": done reading request body.
+2024-04-22 15:23:17.556 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:23:17.559 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name '' in request data ...
+2024-04-22 15:23:17.561 -04:00 [DBG] No files found in the request to bind the model to.
+2024-04-22 15:23:17.562 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:23:17.563 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:23:17.564 -04:00 [DBG] Attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:23:17.567 -04:00 [DBG] Done attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:23:17.569 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-04-22 15:23:17.570 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-04-22 15:23:17.572 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-22 15:23:17.575 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-22 15:23:17.576 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-04-22 15:23:17.577 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-04-22 15:23:17.579 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-22 15:23:17.598 -04:00 [INF] Executed action BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2) in 114.887ms
+2024-04-22 15:23:17.601 -04:00 [INF] Executed endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:23:17.603 -04:00 [DBG] Connection id "0HN3306KSB4AR" completed keep alive response.
+2024-04-22 15:23:17.606 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - 400 null application/problem+json; charset=utf-8 171.5031ms
+2024-04-22 15:23:22.442 -04:00 [DBG] Connection id "0HN3306KSB4AR" received FIN.
+2024-04-22 15:23:22.448 -04:00 [DBG] Connection id "0HN3306KSB4AR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:23:22.452 -04:00 [DBG] Connection id "0HN3306KSB4AR" disconnecting.
+2024-04-22 15:23:22.457 -04:00 [DBG] Connection id "0HN3306KSB4AR" stopped.
+2024-04-22 15:29:05.161 -04:00 [DBG] Connection id "0HN3306KSB4AS" accepted.
+2024-04-22 15:29:05.176 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.191 -04:00 [DBG] Connection id "0HN3306KSB4AS" started.
+2024-04-22 15:29:05.195 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - multipart/form-data; boundary=----formdata-undici-011769131933 11376011
+2024-04-22 15:29:05.201 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/scan-file'
+2024-04-22 15:29:05.204 -04:00 [DBG] Endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)' with route pattern 'api/photoupload/scan-file' is valid for the request path '/api/photoupload/scan-file'
+2024-04-22 15:29:05.210 -04:00 [DBG] Request matched endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:29:05.214 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-22 15:29:05.217 -04:00 [INF] Executing endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:29:05.220 -04:00 [INF] Route matched with {action = "ScanPhotoWithClamAV", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScanPhotoWithClamAV(Microsoft.AspNetCore.Http.IFormFile) on controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2).
+2024-04-22 15:29:05.223 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-22 15:29:05.226 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-04-22 15:29:05.228 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-22 15:29:05.232 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-22 15:29:05.235 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-22 15:29:05.238 -04:00 [DBG] Executing controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:29:05.241 -04:00 [DBG] Executed controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:29:05.243 -04:00 [DBG] Connection id "0HN3306KSB4AS", Request id "0HN3306KSB4AS:00000001": started reading request body.
+2024-04-22 15:29:05.253 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.256 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.263 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.266 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.272 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.275 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.283 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.286 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.292 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.295 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.302 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.307 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.314 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.318 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.330 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.335 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.343 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.348 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.356 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.360 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.367 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.371 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.377 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.380 -04:00 [DBG] Connection id "0HN3306KSB4AS" paused.
+2024-04-22 15:29:05.386 -04:00 [DBG] Connection id "0HN3306KSB4AS" resumed.
+2024-04-22 15:29:05.389 -04:00 [DBG] Connection id "0HN3306KSB4AS", Request id "0HN3306KSB4AS:00000001": done reading request body.
+2024-04-22 15:29:05.403 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:29:05.407 -04:00 [DBG] Attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name '' in request data ...
+2024-04-22 15:29:05.409 -04:00 [DBG] No files found in the request to bind the model to.
+2024-04-22 15:29:05.410 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:29:05.412 -04:00 [DBG] Done attempting to bind parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:29:05.414 -04:00 [DBG] Attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:29:05.419 -04:00 [DBG] Done attempting to validate the bound parameter 'file' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:29:05.421 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-04-22 15:29:05.423 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-04-22 15:29:05.425 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-22 15:29:05.429 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-22 15:29:05.431 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-04-22 15:29:05.435 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-04-22 15:29:05.437 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-22 15:29:05.439 -04:00 [INF] Executed action BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2) in 201.4089ms
+2024-04-22 15:29:05.442 -04:00 [INF] Executed endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.ScanPhotoWithClamAV (BlobTutorial-V2)'
+2024-04-22 15:29:05.443 -04:00 [DBG] Connection id "0HN3306KSB4AS" completed keep alive response.
+2024-04-22 15:29:05.448 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - 400 null application/problem+json; charset=utf-8 252.5379ms
+2024-04-22 15:29:10.210 -04:00 [DBG] Connection id "0HN3306KSB4AS" received FIN.
+2024-04-22 15:29:10.216 -04:00 [DBG] Connection id "0HN3306KSB4AS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:29:10.221 -04:00 [DBG] Connection id "0HN3306KSB4AS" disconnecting.
+2024-04-22 15:29:10.225 -04:00 [DBG] Connection id "0HN3306KSB4AS" stopped.
+2024-04-22 15:30:21.055 -04:00 [DBG] Connection id "0HN3306KSB4AT" accepted.
+2024-04-22 15:30:21.059 -04:00 [DBG] Connection id "0HN3306KSB4AT" started.
+2024-04-22 15:30:21.059 -04:00 [DBG] Connection id "0HN3306KSB4AU" accepted.
+2024-04-22 15:30:21.062 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload - multipart/form-data; boundary=----formdata-undici-056048552739 11376011
+2024-04-22 15:30:21.063 -04:00 [DBG] Connection id "0HN3306KSB4AU" started.
+2024-04-22 15:30:21.066 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.068 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload'
+2024-04-22 15:30:21.069 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/store-sender-data - application/json 65
+2024-04-22 15:30:21.073 -04:00 [DBG] Endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.UploadPhoto (BlobTutorial-V2)' with route pattern 'api/photoupload' is valid for the request path '/api/photoupload'
+2024-04-22 15:30:21.076 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/store-sender-data'
+2024-04-22 15:30:21.079 -04:00 [DBG] Request matched endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.UploadPhoto (BlobTutorial-V2)'
+2024-04-22 15:30:21.080 -04:00 [DBG] Endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.StoreSenderData (BlobTutorial-V2)' with route pattern 'api/photoupload/store-sender-data' is valid for the request path '/api/photoupload/store-sender-data'
+2024-04-22 15:30:21.084 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-22 15:30:21.085 -04:00 [DBG] Request matched endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.StoreSenderData (BlobTutorial-V2)'
+2024-04-22 15:30:21.086 -04:00 [INF] Executing endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.UploadPhoto (BlobTutorial-V2)'
+2024-04-22 15:30:21.087 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-04-22 15:30:21.090 -04:00 [INF] Executing endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.StoreSenderData (BlobTutorial-V2)'
+2024-04-22 15:30:21.095 -04:00 [INF] Route matched with {action = "UploadPhoto", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(Microsoft.AspNetCore.Http.IFormFile) on controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2).
+2024-04-22 15:30:21.097 -04:00 [INF] Route matched with {action = "StoreSenderData", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StoreSenderData(BlobTutorial_V2.Models.UserData) on controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2).
+2024-04-22 15:30:21.099 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-22 15:30:21.103 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-04-22 15:30:21.104 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-04-22 15:30:21.106 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-04-22 15:30:21.107 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-22 15:30:21.109 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-04-22 15:30:21.111 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-22 15:30:21.113 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-04-22 15:30:21.116 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-22 15:30:21.118 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-04-22 15:30:21.121 -04:00 [DBG] Executing controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:30:21.122 -04:00 [DBG] Executing controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:30:21.124 -04:00 [DBG] Executed controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:30:21.125 -04:00 [DBG] Executed controller factory for controller BlobTutorial_V2.Controllers.PhotoUploadController (BlobTutorial-V2)
+2024-04-22 15:30:21.126 -04:00 [DBG] Connection id "0HN3306KSB4AT", Request id "0HN3306KSB4AT:00000001": started reading request body.
+2024-04-22 15:30:21.128 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'BlobTutorial_V2.Models.UserData' ...
+2024-04-22 15:30:21.133 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'BlobTutorial_V2.Models.UserData' using the name '' in request data ...
+2024-04-22 15:30:21.135 -04:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-04-22 15:30:21.135 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.141 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.144 -04:00 [DBG] Connection id "0HN3306KSB4AU", Request id "0HN3306KSB4AU:00000001": started reading request body.
+2024-04-22 15:30:21.146 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.147 -04:00 [DBG] Connection id "0HN3306KSB4AU", Request id "0HN3306KSB4AU:00000001": done reading request body.
+2024-04-22 15:30:21.149 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.152 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.152 -04:00 [DBG] JSON input formatter succeeded, deserializing to type 'BlobTutorial_V2.Models.UserData'
+2024-04-22 15:30:21.155 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'BlobTutorial_V2.Models.UserData'.
+2024-04-22 15:30:21.156 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.157 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'BlobTutorial_V2.Models.UserData'.
+2024-04-22 15:30:21.160 -04:00 [DBG] Attempting to validate the bound parameter 'userData' of type 'BlobTutorial_V2.Models.UserData' ...
+2024-04-22 15:30:21.161 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.164 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.167 -04:00 [DBG] Done attempting to validate the bound parameter 'userData' of type 'BlobTutorial_V2.Models.UserData'.
+2024-04-22 15:30:21.170 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.177 -04:00 [INF] Received backend request to store sender data at 4/22/2024 3:30:21 PM
+2024-04-22 15:30:21.177 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.179 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-22 15:30:21.182 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.184 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-22 15:30:21.186 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-04-22 15:30:21.186 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.187 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-04-22 15:30:21.188 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-04-22 15:30:21.188 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.190 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-22 15:30:21.193 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.195 -04:00 [INF] Executed action BlobTutorial_V2.Controllers.PhotoUploadController.StoreSenderData (BlobTutorial-V2) in 72.2651ms
+2024-04-22 15:30:21.199 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.200 -04:00 [INF] Executed endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.StoreSenderData (BlobTutorial-V2)'
+2024-04-22 15:30:21.202 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.202 -04:00 [DBG] Connection id "0HN3306KSB4AU" completed keep alive response.
+2024-04-22 15:30:21.205 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/store-sender-data - 200 null application/json; charset=utf-8 135.4882ms
+2024-04-22 15:30:21.206 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.213 -04:00 [DBG] Connection id "0HN3306KSB4AT" paused.
+2024-04-22 15:30:21.217 -04:00 [DBG] Connection id "0HN3306KSB4AT" resumed.
+2024-04-22 15:30:21.219 -04:00 [DBG] Connection id "0HN3306KSB4AT", Request id "0HN3306KSB4AT:00000001": done reading request body.
+2024-04-22 15:30:21.228 -04:00 [DBG] Attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:30:21.230 -04:00 [DBG] Attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'photo' in request data ...
+2024-04-22 15:30:21.233 -04:00 [DBG] Done attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:30:21.235 -04:00 [DBG] Done attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:30:21.237 -04:00 [DBG] Attempting to validate the bound parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-04-22 15:30:21.240 -04:00 [DBG] Done attempting to validate the bound parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-04-22 15:30:21.261 -04:00 [INF] Received backend request to upload photo at 4/22/2024 3:30:21 PM
+2024-04-22 15:30:21.262 -04:00 [INF] Scanning for malware
+2024-04-22 15:30:21.312 -04:00 [INF] ClamAV received request to scan house.jpg
+2024-04-22 15:30:21.414 -04:00 [INF] Scan result: "Clean"
+2024-04-22 15:30:21.416 -04:00 [INF] The file is clean! ScanResult:stream: OK
+2024-04-22 15:30:26.086 -04:00 [DBG] Connection id "0HN3306KSB4AU" received FIN.
+2024-04-22 15:30:26.091 -04:00 [DBG] Connection id "0HN3306KSB4AU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:30:26.094 -04:00 [DBG] Connection id "0HN3306KSB4AU" disconnecting.
+2024-04-22 15:30:26.097 -04:00 [DBG] Connection id "0HN3306KSB4AU" stopped.
+2024-04-22 15:30:44.232 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-04-22 15:30:44.239 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-04-22 15:30:44.240 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-04-22 15:30:44.241 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-04-22 15:30:44.243 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-04-22 15:30:44.245 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-22 15:30:44.248 -04:00 [INF] Executed action BlobTutorial_V2.Controllers.PhotoUploadController.UploadPhoto (BlobTutorial-V2) in 23127.8632ms
+2024-04-22 15:30:44.252 -04:00 [INF] Executed endpoint 'BlobTutorial_V2.Controllers.PhotoUploadController.UploadPhoto (BlobTutorial-V2)'
+2024-04-22 15:30:44.254 -04:00 [DBG] Connection id "0HN3306KSB4AT" completed keep alive response.
+2024-04-22 15:30:44.258 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload - 200 null application/json; charset=utf-8 23196.449ms
+2024-04-22 15:30:49.208 -04:00 [DBG] Connection id "0HN3306KSB4AT" received FIN.
+2024-04-22 15:30:49.213 -04:00 [DBG] Connection id "0HN3306KSB4AT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-04-22 15:30:49.218 -04:00 [DBG] Connection id "0HN3306KSB4AT" disconnecting.
+2024-04-22 15:30:49.222 -04:00 [DBG] Connection id "0HN3306KSB4AT" stopped.
+2024-04-22 15:35:02.040 -04:00 [INF] Application is shutting down...
+2024-04-22 15:35:02.041 -04:00 [DBG] Hosting stopping
+2024-04-22 15:35:02.048 -04:00 [DBG] Hosting stopped

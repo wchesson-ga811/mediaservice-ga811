@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wchesson\\chessoncode\\BlobTutorial-V2\\image-upload-backend\\BlobTutorial-V2.csproj": {}
+    "C:\\Users\\wchesson\\chessoncode\\MediaServiceGA811\\image-upload-backend\\BlobTutorial-V2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wchesson\\chessoncode\\BlobTutorial-V2\\image-upload-backend\\BlobTutorial-V2.csproj": {
+    "C:\\Users\\wchesson\\chessoncode\\MediaServiceGA811\\image-upload-backend\\BlobTutorial-V2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wchesson\\chessoncode\\BlobTutorial-V2\\image-upload-backend\\BlobTutorial-V2.csproj",
+        "projectUniqueName": "C:\\Users\\wchesson\\chessoncode\\MediaServiceGA811\\image-upload-backend\\BlobTutorial-V2.csproj",
         "projectName": "BlobTutorial-V2",
-        "projectPath": "C:\\Users\\wchesson\\chessoncode\\BlobTutorial-V2\\image-upload-backend\\BlobTutorial-V2.csproj",
+        "projectPath": "C:\\Users\\wchesson\\chessoncode\\MediaServiceGA811\\image-upload-backend\\BlobTutorial-V2.csproj",
         "packagesPath": "C:\\Users\\wchesson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wchesson\\chessoncode\\BlobTutorial-V2\\image-upload-backend\\obj\\",
+        "outputPath": "C:\\Users\\wchesson\\chessoncode\\MediaServiceGA811\\image-upload-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wchesson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,6 +72,10 @@
               "target": "Package",
               "version": "[11.2.3, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -100,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
