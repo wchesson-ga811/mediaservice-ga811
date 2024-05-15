@@ -234,3 +234,8 @@ C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\obj\Debug\n
 C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\obj\Debug\net8.0\BlobTutorial-V2.pdb
 C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\obj\Debug\net8.0\BlobTutorial-V2.genruntimeconfig.cache
 C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\obj\Debug\net8.0\ref\BlobTutorial-V2.dll
+C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\bin\Debug\net8.0\Microsoft.ApplicationInsights.dll
+C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.AzureAppServices.dll

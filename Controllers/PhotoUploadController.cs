@@ -10,7 +10,7 @@ using Microsoft.Azure.Storage;
 using Microsoft.Azure.Storage.Blob;
 using nClam;
 
-namespace BlobTutorial_V2.Controllers
+namespace PhotoUpload.Controllers
 {
     [Route("api/photoupload")]
     [ApiController]
@@ -68,17 +68,21 @@ namespace BlobTutorial_V2.Controllers
 
                 var containerClient = blobServiceClient.GetBlobContainerClient("images");
 
+                //save original file name
+                string originalFileName = photo.FileName;
+                Console.WriteLine($"Original file name: {originalFileName}");
+
                 // Create a unique name for the photo
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+                string guidFileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
 
                 await using var stream = photo.OpenReadStream();
-                var uploaded = await containerClient.UploadBlobAsync(photo.FileName, stream);
+                var uploaded = await containerClient.UploadBlobAsync(guidFileName, stream);
 
                 BlobClient blobClient;
 
                 if (uploaded != null)
                 {
-                    blobClient = containerClient.GetBlobClient(fileName);
+                    blobClient = containerClient.GetBlobClient(guidFileName);
                     Console.WriteLine($"Uploaded photo to {blobClient.Uri} at {now}");
                 }
                 else
@@ -86,9 +90,9 @@ namespace BlobTutorial_V2.Controllers
                     return BadRequest("Backend: failed to upload photo");
                 }
 
-                var exifMetadata = ExtractExifMetadata(photo);
+                var exifMetadata = await ExtractExifMetadata(photo);
 
-                // exifMetadata.Add("Uri", blobClient.Uri.ToString());
+                exifMetadata.Add("GUIDFileName", guidFileName);
 
                 return Ok(exifMetadata);
                 // }
@@ -137,10 +141,9 @@ namespace BlobTutorial_V2.Controllers
                     .ToList()
                     .ForEach(tag =>
                     {
-                        
                         string snakeCaseName = tag.Name.Replace(" ", ""); // Trims white spaces and other whitespace characters
 
-                        _logger.LogInformation($"{snakeCaseName}");
+                        // _logger.LogInformation($"{snakeCaseName}");
                     });
 
                 // Extract EXIF tags and values
@@ -250,5 +253,7 @@ namespace BlobTutorial_V2.Controllers
             // Add a return statement at the end of the method
             return BadRequest("Could not scan the file.");
         }
+
+
     }
 }

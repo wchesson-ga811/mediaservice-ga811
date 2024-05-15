@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlobTutorial-V2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63283aa40167959d44ee78c95ba575d24cb126df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+031297545df82fc28c64ffa8e98953ffe7b7e15c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlobTutorial-V2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlobTutorial-V2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
