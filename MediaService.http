@@ -1,0 +1,6 @@
+@MediaService_HostAddress = http://localhost:5111
+
+GET {{BlobTutorial_V2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

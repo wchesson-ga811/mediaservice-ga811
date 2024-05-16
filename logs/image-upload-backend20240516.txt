@@ -1,0 +1,266 @@
+2024-05-16 13:18:57.770 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-16 13:40:43.695 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-16 13:40:43.913 -04:00 [DBG] Entity Framework Core 8.0.5 initialized 'MediaServiceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-16 13:40:44.168 -04:00 [DBG] 'MediaServiceContext' disposed.
+2024-05-16 13:41:05.049 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-16 13:41:05.269 -04:00 [DBG] Entity Framework Core 8.0.5 initialized 'MediaServiceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-16 13:41:05.280 -04:00 [DBG] Creating DbConnection.
+2024-05-16 13:41:05.304 -04:00 [DBG] Created DbConnection. (23ms).
+2024-05-16 13:41:05.308 -04:00 [DBG] Migrating using database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:41:05.312 -04:00 [DBG] Opening connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:41:20.784 -04:00 [DBG] An error occurred using the connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:41:20.788 -04:00 [DBG] 'MediaServiceContext' disposed.
+2024-05-16 13:41:20.790 -04:00 [DBG] Disposing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:41:20.793 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-05-16 13:44:12.970 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-16 13:44:13.191 -04:00 [DBG] Entity Framework Core 8.0.5 initialized 'MediaServiceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-16 13:44:13.201 -04:00 [DBG] Creating DbConnection.
+2024-05-16 13:44:13.222 -04:00 [DBG] Created DbConnection. (18ms).
+2024-05-16 13:44:13.225 -04:00 [DBG] Migrating using database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.229 -04:00 [DBG] Opening connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.593 -04:00 [DBG] Opened connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.598 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:44:13.610 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (11ms).
+2024-05-16 13:44:13.615 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (17ms).
+2024-05-16 13:44:13.619 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:44:13.678 -04:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:44:13.682 -04:00 [DBG] Closing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.686 -04:00 [DBG] Closed connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433' (2ms).
+2024-05-16 13:44:13.688 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-16 13:44:13.689 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-16 13:44:13.690 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-16 13:44:13.691 -04:00 [DBG] Opening connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.693 -04:00 [DBG] Opened connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.694 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:44:13.732 -04:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:44:13.735 -04:00 [DBG] Closing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.736 -04:00 [DBG] Closed connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433' (1ms).
+2024-05-16 13:44:13.737 -04:00 [DBG] Opening connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.738 -04:00 [DBG] Opened connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.739 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:44:13.740 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-16 13:44:13.741 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-16 13:44:13.742 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:44:13.772 -04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:44:13.775 -04:00 [DBG] Closing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.776 -04:00 [DBG] Closed connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433' (1ms).
+2024-05-16 13:44:13.777 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-16 13:44:13.778 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-16 13:44:13.779 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-16 13:44:13.780 -04:00 [DBG] Opening connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.781 -04:00 [DBG] Opened connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.782 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:44:13.812 -04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:44:13.814 -04:00 [DBG] Closing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.815 -04:00 [DBG] Closed connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433' (1ms).
+2024-05-16 13:44:13.825 -04:00 [DBG] Opening connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.827 -04:00 [DBG] Opened connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.828 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-16 13:44:13.829 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-05-16 13:44:13.830 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-05-16 13:44:13.831 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-16 13:44:13.892 -04:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-16 13:44:13.897 -04:00 [DBG] Closing data reader to 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.898 -04:00 [DBG] A data reader for 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433' is being disposed after spending 2ms reading results.
+2024-05-16 13:44:13.900 -04:00 [DBG] Closing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.901 -04:00 [DBG] Closed connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433' (0ms).
+2024-05-16 13:44:13.906 -04:00 [INF] Applying migration '20240516174044_initialMigration'.
+2024-05-16 13:44:13.924 -04:00 [DBG] Opening connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.928 -04:00 [DBG] Opened connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:13.929 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-05-16 13:44:13.962 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-05-16 13:44:13.964 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:44:13.965 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-16 13:44:13.967 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-16 13:44:13.968 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UploadInfo] (
+    [UploadId] int NOT NULL IDENTITY,
+    [AzureStorageId] nvarchar(max) NOT NULL,
+    [UploaderName] nvarchar(max) NOT NULL,
+    [UploaderCompany] nvarchar(max) NOT NULL,
+    [UploaderEmail] nvarchar(max) NOT NULL,
+    [UploaderLocation] nvarchar(max) NOT NULL,
+    [MetadataJson] nvarchar(max) NOT NULL,
+    [UploadTime] datetime2 NOT NULL,
+    CONSTRAINT [PK_UploadInfo] PRIMARY KEY ([UploadId])
+);
+2024-05-16 13:44:14.011 -04:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UploadInfo] (
+    [UploadId] int NOT NULL IDENTITY,
+    [AzureStorageId] nvarchar(max) NOT NULL,
+    [UploaderName] nvarchar(max) NOT NULL,
+    [UploaderCompany] nvarchar(max) NOT NULL,
+    [UploaderEmail] nvarchar(max) NOT NULL,
+    [UploaderLocation] nvarchar(max) NOT NULL,
+    [MetadataJson] nvarchar(max) NOT NULL,
+    [UploadTime] datetime2 NOT NULL,
+    CONSTRAINT [PK_UploadInfo] PRIMARY KEY ([UploadId])
+);
+2024-05-16 13:44:14.015 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:44:14.016 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-16 13:44:14.017 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-05-16 13:44:14.018 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240516174044_initialMigration', N'8.0.5');
+2024-05-16 13:44:14.053 -04:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240516174044_initialMigration', N'8.0.5');
+2024-05-16 13:44:14.055 -04:00 [DBG] Committing transaction.
+2024-05-16 13:44:14.088 -04:00 [DBG] Committed transaction.
+2024-05-16 13:44:14.089 -04:00 [DBG] Disposing transaction.
+2024-05-16 13:44:14.090 -04:00 [DBG] Closing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:14.091 -04:00 [DBG] Closed connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433' (1ms).
+2024-05-16 13:44:14.093 -04:00 [DBG] 'MediaServiceContext' disposed.
+2024-05-16 13:44:14.096 -04:00 [DBG] Disposing connection to database 'control-center-api' on server 'tcp:control-center-api.database.windows.net,1433'.
+2024-05-16 13:44:14.097 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-05-16 13:46:06.463 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-16 13:46:06.680 -04:00 [DBG] Entity Framework Core 8.0.5 initialized 'MediaServiceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-16 13:46:06.889 -04:00 [DBG] 'MediaServiceContext' disposed.
+2024-05-16 13:46:22.466 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-16 13:46:22.686 -04:00 [DBG] Entity Framework Core 8.0.5 initialized 'MediaServiceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: None
+2024-05-16 13:46:22.696 -04:00 [DBG] Creating DbConnection.
+2024-05-16 13:46:22.716 -04:00 [DBG] Created DbConnection. (18ms).
+2024-05-16 13:46:22.719 -04:00 [DBG] Migrating using database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:22.723 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.060 -04:00 [DBG] Opened connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.064 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:46:23.071 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (6ms).
+2024-05-16 13:46:23.074 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (10ms).
+2024-05-16 13:46:23.079 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:46:23.135 -04:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:46:23.138 -04:00 [DBG] Closing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.142 -04:00 [DBG] Closed connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' (2ms).
+2024-05-16 13:46:23.145 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-16 13:46:23.146 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-16 13:46:23.147 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-16 13:46:23.148 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.149 -04:00 [DBG] Opened connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.150 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:46:23.187 -04:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:46:23.189 -04:00 [DBG] Closing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.190 -04:00 [DBG] Closed connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' (0ms).
+2024-05-16 13:46:23.192 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.193 -04:00 [DBG] Opened connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.194 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:46:23.196 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-16 13:46:23.197 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2024-05-16 13:46:23.198 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:46:23.230 -04:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-16 13:46:23.232 -04:00 [DBG] Closing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.233 -04:00 [DBG] Closed connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' (0ms).
+2024-05-16 13:46:23.234 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-05-16 13:46:23.235 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2024-05-16 13:46:23.236 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (1ms).
+2024-05-16 13:46:23.238 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.239 -04:00 [DBG] Opened connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.239 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:46:23.271 -04:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-16 13:46:23.273 -04:00 [DBG] Closing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.275 -04:00 [DBG] Closed connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' (1ms).
+2024-05-16 13:46:23.284 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.285 -04:00 [DBG] Opened connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.287 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-05-16 13:46:23.288 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-05-16 13:46:23.289 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-05-16 13:46:23.290 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-16 13:46:23.362 -04:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-16 13:46:23.367 -04:00 [DBG] Closing data reader to 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.369 -04:00 [DBG] A data reader for 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' is being disposed after spending 2ms reading results.
+2024-05-16 13:46:23.372 -04:00 [DBG] Closing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.373 -04:00 [DBG] Closed connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' (0ms).
+2024-05-16 13:46:23.378 -04:00 [INF] Applying migration '20240516174044_initialMigration'.
+2024-05-16 13:46:23.391 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.392 -04:00 [DBG] Opened connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.394 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-05-16 13:46:23.427 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-05-16 13:46:23.430 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:46:23.431 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-16 13:46:23.432 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-16 13:46:23.433 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UploadInfo] (
+    [UploadId] int NOT NULL IDENTITY,
+    [AzureStorageId] nvarchar(max) NOT NULL,
+    [UploaderName] nvarchar(max) NOT NULL,
+    [UploaderCompany] nvarchar(max) NOT NULL,
+    [UploaderEmail] nvarchar(max) NOT NULL,
+    [UploaderLocation] nvarchar(max) NOT NULL,
+    [MetadataJson] nvarchar(max) NOT NULL,
+    [UploadTime] datetime2 NOT NULL,
+    CONSTRAINT [PK_UploadInfo] PRIMARY KEY ([UploadId])
+);
+2024-05-16 13:46:23.471 -04:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UploadInfo] (
+    [UploadId] int NOT NULL IDENTITY,
+    [AzureStorageId] nvarchar(max) NOT NULL,
+    [UploaderName] nvarchar(max) NOT NULL,
+    [UploaderCompany] nvarchar(max) NOT NULL,
+    [UploaderEmail] nvarchar(max) NOT NULL,
+    [UploaderLocation] nvarchar(max) NOT NULL,
+    [MetadataJson] nvarchar(max) NOT NULL,
+    [UploadTime] datetime2 NOT NULL,
+    CONSTRAINT [PK_UploadInfo] PRIMARY KEY ([UploadId])
+);
+2024-05-16 13:46:23.476 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:46:23.477 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-05-16 13:46:23.478 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-16 13:46:23.479 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240516174044_initialMigration', N'8.0.5');
+2024-05-16 13:46:23.509 -04:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240516174044_initialMigration', N'8.0.5');
+2024-05-16 13:46:23.517 -04:00 [DBG] Committing transaction.
+2024-05-16 13:46:23.556 -04:00 [DBG] Committed transaction.
+2024-05-16 13:46:23.560 -04:00 [DBG] Disposing transaction.
+2024-05-16 13:46:23.562 -04:00 [DBG] Closing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.564 -04:00 [DBG] Closed connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' (1ms).
+2024-05-16 13:46:23.566 -04:00 [INF] Applying migration '20240516174606_migrateToProdDB'.
+2024-05-16 13:46:23.568 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.569 -04:00 [DBG] Opened connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.570 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2024-05-16 13:46:23.597 -04:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2024-05-16 13:46:23.601 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2024-05-16 13:46:23.604 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2024-05-16 13:46:23.606 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+2024-05-16 13:46:23.609 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240516174606_migrateToProdDB', N'8.0.5');
+2024-05-16 13:46:23.643 -04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240516174606_migrateToProdDB', N'8.0.5');
+2024-05-16 13:46:23.647 -04:00 [DBG] Committing transaction.
+2024-05-16 13:46:23.679 -04:00 [DBG] Committed transaction.
+2024-05-16 13:46:23.681 -04:00 [DBG] Disposing transaction.
+2024-05-16 13:46:23.682 -04:00 [DBG] Closing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.683 -04:00 [DBG] Closed connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433' (0ms).
+2024-05-16 13:46:23.685 -04:00 [DBG] 'MediaServiceContext' disposed.
+2024-05-16 13:46:23.686 -04:00 [DBG] Disposing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-16 13:46:23.687 -04:00 [DBG] Disposed connection to database '' on server '' (1ms).

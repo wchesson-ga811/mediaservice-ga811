@@ -1,8 +1,11 @@
 using System.Diagnostics.CodeAnalysis;
+using AutoMapper;
 using Azure.Identity;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
-using BlobTutorial_V2.Models;
+using ImageUpload.Entities;
+using ImageUpload.Models;
+using MediaService.Services;
 using MetadataExtractor;
 using MetadataExtractor.Formats.Tiff;
 using Microsoft.AspNetCore.Mvc;
@@ -19,15 +22,24 @@ namespace PhotoUpload.Controllers
         private readonly IConfiguration _configuration;
         private readonly ILogger<PhotoUploadController> _logger;
 
+        private readonly IMapper _mapper;
+
         ClamClient clam = new ClamClient("localhost", 3310);
 
+        private readonly IUploadInfoRepo _uploadInfoRepo;
+
         public PhotoUploadController(
-            IConfiguration configuration,
-            ILogger<PhotoUploadController> logger
+            // IConfiguration configuration,
+            ILogger<PhotoUploadController> logger,
+            IMapper mapper,
+            IUploadInfoRepo uploadInfoRepo
         )
         {
-            _configuration = configuration;
-            _logger = logger;
+            // _configuration = configuration;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            _uploadInfoRepo =
+                uploadInfoRepo ?? throw new ArgumentNullException(nameof(uploadInfoRepo));
         }
 
         [HttpGet]
@@ -136,15 +148,15 @@ namespace PhotoUpload.Controllers
                 IEnumerable<MetadataExtractor.Directory> directories =
                     ImageMetadataReader.ReadMetadata(stream);
 
-                directories
-                    .SelectMany(directory => directory.Tags)
-                    .ToList()
-                    .ForEach(tag =>
-                    {
-                        string snakeCaseName = tag.Name.Replace(" ", ""); // Trims white spaces and other whitespace characters
+                // directories
+                //     .SelectMany(directory => directory.Tags)
+                //     .ToList()
+                //     .ForEach(tag =>
+                //     {
+                //         string snakeCaseName = tag.Name.Replace(" ", ""); // Trims white spaces and other whitespace characters
 
-                        // _logger.LogInformation($"{snakeCaseName}");
-                    });
+                //         // _logger.LogInformation($"{snakeCaseName}");
+                //     });
 
                 // Extract EXIF tags and values
                 // var exifMetadata = directories
@@ -152,7 +164,7 @@ namespace PhotoUpload.Controllers
 
                 var exifMetadata = directories
                     .SelectMany(directory => directory.Tags)
-                    .GroupBy(tag => tag.Name) // Group tags by name
+                    .GroupBy(tag => tag.Name.Replace(" ", "")) // Group tags by name
                     .ToDictionary(
                         group => group.Key, // Use the tag name as the dictionary key
                         group => string.Join("; ", group.Select(tag => tag.Description)) // Concatenate descriptions
@@ -164,28 +176,57 @@ namespace PhotoUpload.Controllers
             }
         }
 
-        [HttpPost("store-sender-data")]
-        public async Task<IActionResult> StoreSenderData(
-            // string excavatorName,
-            // string excavatorCompany,
-            // string excavatorLocation
-            UserData userData
+        // [HttpPost("store-sender-data")]
+        // public async Task<IActionResult> StoreSenderData(
+        //     // string excavatorName,
+        //     // string excavatorCompany,
+        //     // string excavatorLocation
+        //     UserData userData
+        // )
+        // {
+        //     DateTime now = DateTime.Now;
+
+        //     try
+        //     {
+        //         _logger.LogInformation($"Received backend request to store sender data at {now}");
+
+        //         Dictionary<string, string> senderData = new Dictionary<string, string>
+        //         {
+        //             { "ExcavatorName", userData.ExcavatorName },
+        //             { "ExcavatorCompany", userData.ExcavatorCompany },
+        //             { "ExcavatorLocation", userData.ExcavatorLocation }
+        //         };
+
+        //         return Ok(senderData);
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+        //     }
+        // }
+
+        [HttpPost("store-upload-data")]
+        public async Task<ActionResult<UploadForCreationDTO>> StoreUploadData(
+            UploadForCreationDTO uploadDTO,
+            string guid
         )
         {
             DateTime now = DateTime.Now;
 
             try
             {
-                _logger.LogInformation($"Received backend request to store sender data at {now}");
+                _logger.LogInformation("Mapping UploadForCreationDTO to entity");
 
-                Dictionary<string, string> senderData = new Dictionary<string, string>
-                {
-                    { "ExcavatorName", userData.ExcavatorName },
-                    { "ExcavatorCompany", userData.ExcavatorCompany },
-                    { "ExcavatorLocation", userData.ExcavatorLocation }
-                };
+                var uploadEntity = _mapper.Map<UploadInfo>(uploadDTO);
 
-                return Ok(senderData);
+                _logger.LogInformation("Creating new upload entity");
+                await _uploadInfoRepo.CreateUploadAsync(uploadEntity);
+
+                return CreatedAtAction(
+                    "UploadPhoto",
+                    new { guid = uploadEntity.AzureStorageId },
+                    _mapper.Map<UploadForCreationDTO>(uploadEntity)
+                );
             }
             catch (Exception ex)
             {
@@ -253,7 +294,5 @@ namespace PhotoUpload.Controllers
             // Add a return statement at the end of the method
             return BadRequest("Could not scan the file.");
         }
-
-
     }
 }
