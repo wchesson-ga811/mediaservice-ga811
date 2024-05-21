@@ -147,7 +147,6 @@ namespace PhotoUpload.Controllers
                                 _mapper.Map<UploadForCreationDTO>(uploadForCreationDTO)
                             );
                         }
-
                     }
                     // exifMetadata.Add("GUIDFileName", guidFileName);
 
@@ -181,7 +180,7 @@ namespace PhotoUpload.Controllers
             }
         }
 
-        [HttpPost("upload-blob")]   
+        [HttpPost("upload-blob")]
         public async Task<IActionResult> UploadBlob(IFormFile photo, string guid)
         {
             DateTime now = DateTime.Now;
@@ -276,7 +275,7 @@ namespace PhotoUpload.Controllers
                 _logger.LogInformation("Creating new upload entity");
                 var createdUpload = await _uploadInfoRepo.CreateUploadAsync(uploadEntity);
 
-                if (createdUpload == null)
+                if (createdUpload is not UploadInfo)
                 {
                     return BadRequest("Failed to store upload data");
                 }
