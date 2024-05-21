@@ -40,6 +40,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
 
+builder.Services.AddScoped<IUploadInfoRepo, UploadInfoRepo>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 // Install the necessary package for AddDbContext
 // Run the following command in the terminal:

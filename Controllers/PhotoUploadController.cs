@@ -49,9 +49,12 @@ namespace PhotoUpload.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UploadPhoto(IFormFile photo)
+        public async Task<IActionResult> UploadPhoto([FromForm] UserdataForCreationDTO userData)
         {
             DateTime now = DateTime.Now;
+
+            // var photo = Request.Form.Files[0];
+            var photo = userData.Photo;
 
             try
             {
@@ -63,63 +66,108 @@ namespace PhotoUpload.Controllers
                 {
                     return BadRequest("No photo found");
                 }
-
-                // IActionResult isFileClean = await ScanPhotoWithClamAV(photo);
-
-                // if (isFileClean is OkObjectResult)
-                // {
-                // Retrieve the connection string for the Azure Blob Storage
-                string connectionString =
-                    _configuration.GetConnectionString("ConnectionStrings:AzureMediaService")
-                    ?? string.Empty;
-
-                var blobServiceClient = new BlobServiceClient(
-                    new Uri("https://mediaservicega811.blob.core.windows.net/"),
-                    new DefaultAzureCredential()
-                );
-
-                var containerClient = blobServiceClient.GetBlobContainerClient("images");
-
-                //save original file name
-                string originalFileName = photo.FileName;
-                Console.WriteLine($"Original file name: {originalFileName}");
-
-                // Create a unique name for the photo
-                string guidFileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
-
-                await using var stream = photo.OpenReadStream();
-                var uploaded = await containerClient.UploadBlobAsync(guidFileName, stream);
-
-                BlobClient blobClient;
-
-                if (uploaded != null)
+                else if (userData == null)
                 {
-                    blobClient = containerClient.GetBlobClient(guidFileName);
-                    Console.WriteLine($"Uploaded photo to {blobClient.Uri} at {now}");
+                    return BadRequest("No user data found");
+                }
+
+                IActionResult isFileClean = await ScanPhotoWithClamAV(photo);
+
+                if (isFileClean is OkObjectResult)
+                {
+                    // Create a unique name for the photo
+                    string guidFileName =
+                        Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+
+                    var uploadToBlob = await UploadBlob(photo, guidFileName);
+
+                    // //Retrieve the connection string for the Azure Blob Storage
+                    // string connectionString =
+                    //     _configuration.GetConnectionString("ConnectionStrings:AzureMediaService")
+                    //     ?? string.Empty;
+
+                    // var blobServiceClient = new BlobServiceClient(
+                    //     new Uri("https://mediaservicega811.blob.core.windows.net/"),
+                    //     new DefaultAzureCredential()
+                    // );
+
+                    // var containerClient = blobServiceClient.GetBlobContainerClient("images");
+
+                    // //save original file name
+                    // string originalFileName = photo.FileName;
+                    // Console.WriteLine($"Original file name: {originalFileName}");
+
+                    // await using var stream = photo.OpenReadStream();
+                    // var uploaded = await containerClient.UploadBlobAsync(guidFileName, stream);
+
+                    // BlobClient blobClient;
+
+                    // if (uploaded != null)
+                    // {
+                    //     blobClient = containerClient.GetBlobClient(guidFileName);
+                    //     Console.WriteLine($"Uploaded photo to {blobClient.Uri} at {now}");
+                    // }
+                    // else
+                    // {
+                    //     return BadRequest("Backend: failed to upload photo");
+                    // }
+
+                    // Extract EXIF metadata from the photo
+
+                    Dictionary<string, string> exifMetadata;
+                    if (uploadToBlob is OkObjectResult)
+                    {
+                        exifMetadata = await ExtractExifMetadata(photo);
+
+                        //set values to for upload entity
+                        var uploadForCreationDTO = new UploadForCreationDTO
+                        {
+                            AzureStorageId = guidFileName,
+                            Metadata = exifMetadata,
+                            UploadTime = now,
+                            UploaderCompany = userData.UploaderCompany,
+                            UploaderEmail = userData.UploaderEmail,
+                            UploaderLocation = userData.UploaderLocation,
+                            UploaderName = userData.UploaderName,
+                        };
+
+                        var dataUploaded = await StoreUploadData(uploadForCreationDTO);
+
+                        // ActionResult dataUploaded = await StoreUploadData(uploadForCreationDTO);
+
+                        if (dataUploaded.Result is BadRequestObjectResult)
+                        {
+                            return BadRequest("Failed to store upload data");
+                        }
+                        else if (dataUploaded.Result is CreatedAtActionResult)
+                        {
+                            return CreatedAtAction(
+                                "UploadPhoto",
+                                new { guid = guidFileName },
+                                _mapper.Map<UploadForCreationDTO>(uploadForCreationDTO)
+                            );
+                        }
+
+                    }
+                    // exifMetadata.Add("GUIDFileName", guidFileName);
+
+                    // return Ok(exifMetadata);
+                    // }
+                }
+                else if (isFileClean is UnauthorizedObjectResult)
+                {
+                    return BadRequest(
+                        "There was malware detected in your photo. Please submit another photo to complete your request."
+                    );
                 }
                 else
                 {
-                    return BadRequest("Backend: failed to upload photo");
+                    return BadRequest(
+                        "There was an error scanning your photo for malware. Please try another photo or at a later time."
+                    );
                 }
 
-                var exifMetadata = await ExtractExifMetadata(photo);
-
-                exifMetadata.Add("GUIDFileName", guidFileName);
-
-                return Ok(exifMetadata);
-                // }
-                // else if (isFileClean is UnauthorizedObjectResult)
-                // {
-                //     return BadRequest(
-                //         "There was malware detected in your photo. Please submit another photo to complete your request."
-                //     );
-                // }
-                // else
-                // {
-                //     return BadRequest(
-                //         "There was an error scanning your photo for malware. Please try another photo or at a later time."
-                //     );
-                // }
+                return Ok("Photo uploaded successfully");
 
                 //error handling
             }
@@ -130,6 +178,42 @@ namespace PhotoUpload.Controllers
                 var errorResponse = new { message = ex.StackTrace, exception = ex.ToString() };
 
                 return StatusCode(StatusCodes.Status500InternalServerError, errorResponse);
+            }
+        }
+
+        [HttpPost("upload-blob")]   
+        public async Task<IActionResult> UploadBlob(IFormFile photo, string guid)
+        {
+            DateTime now = DateTime.Now;
+
+            string connectionString =
+                _configuration.GetConnectionString("ConnectionStrings:AzureMediaService")
+                ?? string.Empty;
+
+            var blobServiceClient = new BlobServiceClient(
+                new Uri("https://mediaservicega811.blob.core.windows.net/"),
+                new DefaultAzureCredential()
+            );
+
+            var containerClient = blobServiceClient.GetBlobContainerClient("images");
+
+            //save original file name
+            string originalFileName = photo.FileName;
+            Console.WriteLine($"Original file name: {originalFileName}");
+
+            await using var stream = photo.OpenReadStream();
+            var uploaded = await containerClient.UploadBlobAsync(guid, stream);
+
+            BlobClient blobClient;
+
+            if (uploaded != null)
+            {
+                blobClient = containerClient.GetBlobClient(guid);
+                return Ok($"Uploaded photo to {blobClient.Uri} at {now}");
+            }
+            else
+            {
+                return BadRequest("Backend: failed to upload photo");
             }
         }
 
@@ -176,61 +260,39 @@ namespace PhotoUpload.Controllers
             }
         }
 
-        // [HttpPost("store-sender-data")]
-        // public async Task<IActionResult> StoreSenderData(
-        //     // string excavatorName,
-        //     // string excavatorCompany,
-        //     // string excavatorLocation
-        //     UserData userData
-        // )
-        // {
-        //     DateTime now = DateTime.Now;
-
-        //     try
-        //     {
-        //         _logger.LogInformation($"Received backend request to store sender data at {now}");
-
-        //         Dictionary<string, string> senderData = new Dictionary<string, string>
-        //         {
-        //             { "ExcavatorName", userData.ExcavatorName },
-        //             { "ExcavatorCompany", userData.ExcavatorCompany },
-        //             { "ExcavatorLocation", userData.ExcavatorLocation }
-        //         };
-
-        //         return Ok(senderData);
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-        //     }
-        // }
-
         [HttpPost("store-upload-data")]
         public async Task<ActionResult<UploadForCreationDTO>> StoreUploadData(
-            UploadForCreationDTO uploadDTO,
-            string guid
+            UploadForCreationDTO uploadForCreationDTO
         )
         {
             DateTime now = DateTime.Now;
 
             try
             {
-                _logger.LogInformation("Mapping UploadForCreationDTO to entity");
+                _logger.LogInformation("Mapping upload DTO to upload entity");
 
-                var uploadEntity = _mapper.Map<UploadInfo>(uploadDTO);
+                var uploadEntity = _mapper.Map<UploadInfo>(uploadForCreationDTO);
 
                 _logger.LogInformation("Creating new upload entity");
-                await _uploadInfoRepo.CreateUploadAsync(uploadEntity);
+                var createdUpload = await _uploadInfoRepo.CreateUploadAsync(uploadEntity);
 
-                return CreatedAtAction(
-                    "UploadPhoto",
-                    new { guid = uploadEntity.AzureStorageId },
-                    _mapper.Map<UploadForCreationDTO>(uploadEntity)
-                );
+                if (createdUpload == null)
+                {
+                    return BadRequest("Failed to store upload data");
+                }
+                else
+                {
+                    return CreatedAtAction(
+                        "UploadPhoto",
+                        new { guid = uploadEntity.AzureStorageId },
+                        _mapper.Map<UploadForCreationDTO>(uploadEntity)
+                    );
+                }
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                // return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                throw new Exception("Error uploading to Azure Blob Storage", ex);
             }
         }
 

@@ -1,5 +1,6 @@
 using ImageUpload.Entities;
 using MediaService.DbContexts;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace MediaService.Services
@@ -46,9 +47,25 @@ namespace MediaService.Services
             try
             {
                 _logger.LogInformation($"Creating upload at {now}");
-                await _context.UploadInfo.AddAsync(uploadToCreate);
-                await _context.SaveChangesAsync();
-                return uploadToCreate;
+                var AddAsyncInUploadRepo = await _context.UploadInfo.AddAsync(uploadToCreate);
+
+                if (AddAsyncInUploadRepo.State != EntityState.Added)
+                {
+                    throw new Exception("Error adding upload to context");
+                }
+                else
+                {
+                    var SaveChanges = await _context.SaveChangesAsync();
+
+                    if (SaveChanges == 0)
+                    {
+                        throw new Exception("Error saving changes to the database");
+                    }
+                    else
+                    {
+                        return uploadToCreate;
+                    }
+                }
             }
             catch (Exception e)
             {

@@ -8,6 +8,7 @@ namespace ImageUpload.Profiles
         {
             CreateMap<Entities.UploadInfo, Models.UploadDTO>();
             CreateMap<Models.UploadForCreationDTO, Entities.UploadInfo>();
+            CreateMap<Entities.UploadInfo, Models.UploadForCreationDTO>();
         }
     }
 }

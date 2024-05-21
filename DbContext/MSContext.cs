@@ -17,7 +17,7 @@ namespace MediaService.DbContexts
             optionsBuilder.LogTo(
                 Console.WriteLine,
                 new[] { DbLoggerCategory.Database.Command.Name }
-            );
+            ).EnableSensitiveDataLogging();
         }
     }
 }

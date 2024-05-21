@@ -14,16 +14,16 @@ namespace ImageUpload.Entities
         public string AzureStorageId { get; set; }
 
         [Required]
-        public string ExcavatorName { get; set; }
+        public string UploaderName { get; set; }
 
         [Required]
-        public string ExcavatorCompany { get; set; }
+        public string UploaderCompany { get; set; }
 
         [Required]
-        public string ExcavatorEmail { get; set; }
+        public string UploaderEmail { get; set; }
 
         [Required]
-        public string ExcavatorLocation { get; set; }
+        public string UploaderLocation { get; set; }
 
         [NotMapped]
         public Dictionary<string, string> Metadata { get; set; }
