@@ -46,7 +46,7 @@
             },
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.10.4, )"
+              "version": "[1.11.0, )"
             },
             "Azure.Storage.Blobs": {
               "target": "Package",

@@ -1,0 +1,711 @@
+2024-05-23 10:10:23.481 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-23 10:10:23.522 -04:00 [DBG] Hosting starting
+2024-05-23 10:10:23.554 -04:00 [INF] Now listening on: http://localhost:5111
+2024-05-23 10:10:23.555 -04:00 [DBG] Loaded hosting startup assembly MediaService
+2024-05-23 10:10:23.556 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 10:10:23.557 -04:00 [INF] Hosting environment: Development
+2024-05-23 10:10:23.557 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend
+2024-05-23 10:10:23.559 -04:00 [DBG] Hosting started
+2024-05-23 10:11:24.323 -04:00 [INF] Application is shutting down...
+2024-05-23 10:11:24.324 -04:00 [DBG] Hosting stopping
+2024-05-23 10:11:24.331 -04:00 [DBG] Hosting stopped
+2024-05-23 10:11:32.990 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-23 10:11:33.025 -04:00 [DBG] Hosting starting
+2024-05-23 10:11:33.052 -04:00 [INF] Now listening on: http://localhost:5111
+2024-05-23 10:11:33.054 -04:00 [DBG] Loaded hosting startup assembly MediaService
+2024-05-23 10:11:33.055 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 10:11:33.055 -04:00 [INF] Hosting environment: Development
+2024-05-23 10:11:33.056 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend
+2024-05-23 10:11:33.057 -04:00 [DBG] Hosting started
+2024-05-23 10:12:07.913 -04:00 [DBG] Connection id "0HN3R69AAUNVJ" accepted.
+2024-05-23 10:12:07.914 -04:00 [DBG] Connection id "0HN3R69AAUNVJ" started.
+2024-05-23 10:13:09.993 -04:00 [DBG] Connection id "0HN3R69AAUNVJ" received FIN.
+2024-05-23 10:13:10.001 -04:00 [DBG] Connection id "0HN3R69AAUNVJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 10:13:10.006 -04:00 [DBG] Connection id "0HN3R69AAUNVJ" disconnecting.
+2024-05-23 10:13:10.009 -04:00 [DBG] Connection id "0HN3R69AAUNVJ" stopped.
+2024-05-23 12:16:44.683 -04:00 [INF] Application is shutting down...
+2024-05-23 12:16:44.684 -04:00 [DBG] Hosting stopping
+2024-05-23 12:16:44.690 -04:00 [DBG] Hosting stopped
+2024-05-23 12:52:00.611 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-23 12:52:00.657 -04:00 [DBG] Hosting starting
+2024-05-23 12:52:00.688 -04:00 [INF] Now listening on: http://localhost:5111
+2024-05-23 12:52:00.690 -04:00 [DBG] Loaded hosting startup assembly MediaService
+2024-05-23 12:52:00.690 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 12:52:00.691 -04:00 [INF] Hosting environment: Development
+2024-05-23 12:52:00.692 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend
+2024-05-23 12:52:00.693 -04:00 [DBG] Hosting started
+2024-05-23 13:45:22.253 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-23 13:45:22.296 -04:00 [DBG] Hosting starting
+2024-05-23 13:45:22.316 -04:00 [INF] Now listening on: http://localhost:5111
+2024-05-23 13:45:22.318 -04:00 [DBG] Loaded hosting startup assembly MediaService
+2024-05-23 13:45:22.319 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 13:45:22.319 -04:00 [INF] Hosting environment: Development
+2024-05-23 13:45:22.320 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend
+2024-05-23 13:45:22.321 -04:00 [DBG] Hosting started
+2024-05-23 13:45:26.742 -04:00 [DBG] Connection id "0HN3RA0GM3IH8" accepted.
+2024-05-23 13:45:26.744 -04:00 [DBG] Connection id "0HN3RA0GM3IH9" accepted.
+2024-05-23 13:45:26.744 -04:00 [DBG] Connection id "0HN3RA0GM3IH8" started.
+2024-05-23 13:45:26.745 -04:00 [DBG] Connection id "0HN3RA0GM3IH9" started.
+2024-05-23 13:45:26.762 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5111/swagger/index.html - null null
+2024-05-23 13:45:26.766 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-23 13:45:26.776 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-05-23 13:45:26.778 -04:00 [DBG] Request did not match any endpoints
+2024-05-23 13:45:26.819 -04:00 [DBG] Connection id "0HN3RA0GM3IH8" completed keep alive response.
+2024-05-23 13:45:26.821 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5111/swagger/index.html - 200 null text/html;charset=utf-8 60.7649ms
+2024-05-23 13:45:26.927 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5111/swagger/v1/swagger.json - null null
+2024-05-23 13:45:26.928 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-05-23 13:45:26.929 -04:00 [DBG] Request did not match any endpoints
+2024-05-23 13:45:26.976 -04:00 [DBG] Connection id "0HN3RA0GM3IH8" completed keep alive response.
+2024-05-23 13:45:26.978 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.6591ms
+2024-05-23 13:45:59.353 -04:00 [INF] Application is shutting down...
+2024-05-23 13:45:59.354 -04:00 [DBG] Hosting stopping
+2024-05-23 13:45:59.364 -04:00 [DBG] Connection id "0HN3RA0GM3IH8" disconnecting.
+2024-05-23 13:45:59.364 -04:00 [DBG] Connection id "0HN3RA0GM3IH9" disconnecting.
+2024-05-23 13:45:59.366 -04:00 [DBG] Connection id "0HN3RA0GM3IH8" stopped.
+2024-05-23 13:45:59.367 -04:00 [DBG] Connection id "0HN3RA0GM3IH9" stopped.
+2024-05-23 13:45:59.369 -04:00 [DBG] Connection id "0HN3RA0GM3IH8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 13:45:59.369 -04:00 [DBG] Connection id "0HN3RA0GM3IH9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 13:45:59.373 -04:00 [DBG] Hosting stopped
+2024-05-23 13:46:02.309 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-23 13:46:02.360 -04:00 [DBG] Hosting starting
+2024-05-23 13:46:02.388 -04:00 [INF] Now listening on: http://localhost:5111
+2024-05-23 13:46:02.389 -04:00 [DBG] Loaded hosting startup assembly MediaService
+2024-05-23 13:46:02.390 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 13:46:02.391 -04:00 [INF] Hosting environment: Development
+2024-05-23 13:46:02.391 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend
+2024-05-23 13:46:02.392 -04:00 [DBG] Hosting started
+2024-05-23 13:46:03.038 -04:00 [DBG] Connection id "0HN3RA0RG86GI" accepted.
+2024-05-23 13:46:03.040 -04:00 [DBG] Connection id "0HN3RA0RG86GI" started.
+2024-05-23 13:46:03.040 -04:00 [DBG] Connection id "0HN3RA0RG86GJ" accepted.
+2024-05-23 13:46:03.044 -04:00 [DBG] Connection id "0HN3RA0RG86GJ" started.
+2024-05-23 13:46:03.053 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5111/swagger/index.html - null null
+2024-05-23 13:46:03.056 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-23 13:46:03.070 -04:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-05-23 13:46:03.071 -04:00 [DBG] Request did not match any endpoints
+2024-05-23 13:46:03.103 -04:00 [DBG] Connection id "0HN3RA0RG86GI" completed keep alive response.
+2024-05-23 13:46:03.106 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5111/swagger/index.html - 200 null text/html;charset=utf-8 53.4159ms
+2024-05-23 13:46:03.233 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5111/swagger/v1/swagger.json - null null
+2024-05-23 13:46:03.236 -04:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-05-23 13:46:03.236 -04:00 [DBG] Request did not match any endpoints
+2024-05-23 13:46:03.293 -04:00 [DBG] Connection id "0HN3RA0RG86GI" completed keep alive response.
+2024-05-23 13:46:03.294 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5111/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.9678ms
+2024-05-23 13:46:09.148 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - multipart/form-data; boundary=----WebKitFormBoundaryUazZeHeVl8ZQ3Ntk 11376025
+2024-05-23 13:46:09.152 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.157 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/scan-file'
+2024-05-23 13:46:09.160 -04:00 [DBG] Endpoint 'PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV (MediaService)' with route pattern 'api/photoupload/scan-file' is valid for the request path '/api/photoupload/scan-file'
+2024-05-23 13:46:09.163 -04:00 [DBG] Request matched endpoint 'PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV (MediaService)'
+2024-05-23 13:46:09.172 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-23 13:46:09.175 -04:00 [INF] Executing endpoint 'PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV (MediaService)'
+2024-05-23 13:46:09.189 -04:00 [INF] Route matched with {action = "ScanPhotoWithClamAV", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScanPhotoWithClamAV(Microsoft.AspNetCore.Http.IFormFile) on controller PhotoUpload.Controllers.PhotoUploadController (MediaService).
+2024-05-23 13:46:09.195 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-23 13:46:09.198 -04:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+2024-05-23 13:46:09.201 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-05-23 13:46:09.206 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-23 13:46:09.210 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-05-23 13:46:09.213 -04:00 [DBG] Executing controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 13:46:09.326 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-23 13:46:09.336 -04:00 [DBG] Executed controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 13:46:09.343 -04:00 [DBG] Connection id "0HN3RA0RG86GI", Request id "0HN3RA0RG86GI:00000003": started reading request body.
+2024-05-23 13:46:09.355 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.358 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.362 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.364 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.366 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.368 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.370 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.372 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.376 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.380 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.382 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.385 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.387 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.389 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.394 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.398 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.401 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.403 -04:00 [DBG] Connection id "0HN3RA0RG86GI" paused.
+2024-05-23 13:46:09.407 -04:00 [DBG] Connection id "0HN3RA0RG86GI" resumed.
+2024-05-23 13:46:09.409 -04:00 [DBG] Connection id "0HN3RA0RG86GI", Request id "0HN3RA0RG86GI:00000003": done reading request body.
+2024-05-23 13:46:09.415 -04:00 [DBG] Attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-05-23 13:46:09.418 -04:00 [DBG] Attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'photo' in request data ...
+2024-05-23 13:46:09.422 -04:00 [DBG] Done attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-05-23 13:46:09.424 -04:00 [DBG] Done attempting to bind parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-05-23 13:46:09.427 -04:00 [DBG] Attempting to validate the bound parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile' ...
+2024-05-23 13:46:09.432 -04:00 [DBG] Done attempting to validate the bound parameter 'photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-05-23 13:46:09.516 -04:00 [INF] ClamAV received request to scan house.jpg
+2024-05-23 13:46:30.559 -04:00 [INF] Executed action PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV (MediaService) in 21343.2321ms
+2024-05-23 13:46:30.562 -04:00 [INF] Executed endpoint 'PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV (MediaService)'
+2024-05-23 13:46:30.564 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.CompleteConnectAsync(Task task)
+   at nClam.ClamClient.CreateConnection(TcpClient clam)
+   at nClam.ClamClient.ExecuteClamCommandAsync(String command, CancellationToken cancellationToken, Func`3 additionalCommand)
+   at nClam.ClamClient.SendAndScanFileAsync(Byte[] fileData, CancellationToken cancellationToken)
+   at PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV(IFormFile photo) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 258
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-23 13:46:30.580 -04:00 [DBG] Connection id "0HN3RA0RG86GI" completed keep alive response.
+2024-05-23 13:46:30.583 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/scan-file - 500 null text/plain; charset=utf-8 21434.5035ms
+2024-05-23 13:47:03.998 -04:00 [DBG] Connection id "0HN3RA0RG86GJ" received FIN.
+2024-05-23 13:47:04.000 -04:00 [DBG] Connection id "0HN3RA0RG86GJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 13:47:04.002 -04:00 [DBG] Connection id "0HN3RA0RG86GJ" disconnecting.
+2024-05-23 13:47:04.003 -04:00 [DBG] Connection id "0HN3RA0RG86GJ" stopped.
+2024-05-23 13:48:41.496 -04:00 [DBG] Connection id "0HN3RA0RG86GI" disconnecting.
+2024-05-23 13:48:41.501 -04:00 [DBG] Connection id "0HN3RA0RG86GI" stopped.
+2024-05-23 13:48:41.504 -04:00 [DBG] Connection id "0HN3RA0RG86GI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 13:56:21.269 -04:00 [INF] Application is shutting down...
+2024-05-23 13:56:21.271 -04:00 [DBG] Hosting stopping
+2024-05-23 13:56:21.280 -04:00 [DBG] Hosting stopped
+2024-05-23 14:53:51.280 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-23 14:53:51.357 -04:00 [DBG] Hosting starting
+2024-05-23 14:53:51.387 -04:00 [INF] Now listening on: http://localhost:5111
+2024-05-23 14:53:51.388 -04:00 [DBG] Loaded hosting startup assembly MediaService
+2024-05-23 14:53:51.389 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 14:53:51.390 -04:00 [INF] Hosting environment: Development
+2024-05-23 14:53:51.392 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend
+2024-05-23 14:53:51.393 -04:00 [DBG] Hosting started
+2024-05-23 15:00:41.187 -04:00 [DBG] Connection id "0HN3RBAI36MIH" accepted.
+2024-05-23 15:00:41.188 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.190 -04:00 [DBG] Connection id "0HN3RBAI36MIH" started.
+2024-05-23 15:00:41.201 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/ - multipart/form-data; boundary=----formdata-undici-015792793853 11376011
+2024-05-23 15:00:41.205 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-23 15:00:41.216 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/'
+2024-05-23 15:00:41.219 -04:00 [DBG] Endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)' with route pattern 'api/photoupload' is valid for the request path '/api/photoupload/'
+2024-05-23 15:00:41.221 -04:00 [DBG] Request matched endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:00:41.227 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-23 15:00:41.228 -04:00 [INF] Executing endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:00:41.245 -04:00 [INF] Route matched with {action = "UploadPhoto", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(ImageUpload.Models.UserdataForCreationDTO) on controller PhotoUpload.Controllers.PhotoUploadController (MediaService).
+2024-05-23 15:00:41.248 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-23 15:00:41.249 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-23 15:00:41.251 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-05-23 15:00:41.252 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-23 15:00:41.253 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-05-23 15:00:41.254 -04:00 [DBG] Executing controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:00:41.338 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-23 15:00:41.347 -04:00 [DBG] Executed controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:00:41.351 -04:00 [DBG] Connection id "0HN3RBAI36MIH", Request id "0HN3RBAI36MIH:00000001": started reading request body.
+2024-05-23 15:00:41.362 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.364 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.366 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.368 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.370 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.371 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.373 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.375 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.378 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.382 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.384 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.386 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.387 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.390 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.392 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.396 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.398 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.399 -04:00 [DBG] Connection id "0HN3RBAI36MIH" paused.
+2024-05-23 15:00:41.401 -04:00 [DBG] Connection id "0HN3RBAI36MIH" resumed.
+2024-05-23 15:00:41.402 -04:00 [DBG] Connection id "0HN3RBAI36MIH", Request id "0HN3RBAI36MIH:00000001": done reading request body.
+2024-05-23 15:00:41.407 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:00:41.409 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' using the name '' in request data ...
+2024-05-23 15:00:41.412 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'Photo' in request data ...
+2024-05-23 15:00:41.414 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-05-23 15:00:41.416 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String' using the name 'UploaderName' in request data ...
+2024-05-23 15:00:41.417 -04:00 [DBG] Could not find a value in the request with name 'UploaderName' for binding property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String'.
+2024-05-23 15:00:41.419 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String'.
+2024-05-23 15:00:41.420 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String' using the name 'UploaderCompany' in request data ...
+2024-05-23 15:00:41.421 -04:00 [DBG] Could not find a value in the request with name 'UploaderCompany' for binding property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String'.
+2024-05-23 15:00:41.422 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String'.
+2024-05-23 15:00:41.423 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String' using the name 'UploaderLocation' in request data ...
+2024-05-23 15:00:41.424 -04:00 [DBG] Could not find a value in the request with name 'UploaderLocation' for binding property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String'.
+2024-05-23 15:00:41.425 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String'.
+2024-05-23 15:00:41.426 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String' using the name 'UploaderEmail' in request data ...
+2024-05-23 15:00:41.428 -04:00 [DBG] Could not find a value in the request with name 'UploaderEmail' for binding property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String'.
+2024-05-23 15:00:41.429 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String'.
+2024-05-23 15:00:41.430 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:00:41.431 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:00:41.432 -04:00 [DBG] Attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:00:41.436 -04:00 [DBG] Done attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:00:41.437 -04:00 [DBG] The request has model state errors, returning an error response.
+2024-05-23 15:00:41.438 -04:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-05-23 15:00:41.440 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-23 15:00:41.442 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-05-23 15:00:41.443 -04:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-05-23 15:00:41.445 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-05-23 15:00:41.446 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-23 15:00:41.465 -04:00 [INF] Executed action PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService) in 209.5647ms
+2024-05-23 15:00:41.467 -04:00 [INF] Executed endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:00:41.469 -04:00 [DBG] Connection id "0HN3RBAI36MIH" completed keep alive response.
+2024-05-23 15:00:41.473 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/ - 400 null application/problem+json; charset=utf-8 272.6924ms
+2024-05-23 15:00:46.208 -04:00 [DBG] Connection id "0HN3RBAI36MIH" received FIN.
+2024-05-23 15:00:46.214 -04:00 [DBG] Connection id "0HN3RBAI36MIH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 15:00:46.219 -04:00 [DBG] Connection id "0HN3RBAI36MIH" disconnecting.
+2024-05-23 15:00:46.227 -04:00 [DBG] Connection id "0HN3RBAI36MIH" stopped.
+2024-05-23 15:09:06.731 -04:00 [DBG] Connection id "0HN3RBAI36MII" accepted.
+2024-05-23 15:09:06.742 -04:00 [DBG] Connection id "0HN3RBAI36MII" started.
+2024-05-23 15:09:06.748 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/ - multipart/form-data; boundary=----formdata-undici-059069559227 11376401
+2024-05-23 15:09:06.754 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/'
+2024-05-23 15:09:06.756 -04:00 [DBG] Endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)' with route pattern 'api/photoupload' is valid for the request path '/api/photoupload/'
+2024-05-23 15:09:06.761 -04:00 [DBG] Request matched endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:09:06.762 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.765 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-23 15:09:06.768 -04:00 [INF] Executing endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:09:06.769 -04:00 [INF] Route matched with {action = "UploadPhoto", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(ImageUpload.Models.UserdataForCreationDTO) on controller PhotoUpload.Controllers.PhotoUploadController (MediaService).
+2024-05-23 15:09:06.773 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-23 15:09:06.775 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-23 15:09:06.777 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-05-23 15:09:06.780 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-23 15:09:06.782 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-05-23 15:09:06.785 -04:00 [DBG] Executing controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:09:06.795 -04:00 [DBG] Executed controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:09:06.798 -04:00 [DBG] Connection id "0HN3RBAI36MII", Request id "0HN3RBAI36MII:00000001": started reading request body.
+2024-05-23 15:09:06.811 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.818 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.827 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.832 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.843 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.847 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.855 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.860 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.866 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.872 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.878 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.881 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.887 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.893 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.901 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:06.907 -04:00 [DBG] Connection id "0HN3RBAI36MII" paused.
+2024-05-23 15:09:06.914 -04:00 [DBG] Connection id "0HN3RBAI36MII" resumed.
+2024-05-23 15:09:07.090 -04:00 [DBG] Connection id "0HN3RBAI36MII", Request id "0HN3RBAI36MII:00000001": done reading request body.
+2024-05-23 15:09:07.093 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:09:07.096 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' using the name '' in request data ...
+2024-05-23 15:09:07.099 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'Photo' in request data ...
+2024-05-23 15:09:07.102 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-05-23 15:09:07.104 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String' using the name 'UploaderName' in request data ...
+2024-05-23 15:09:07.108 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String'.
+2024-05-23 15:09:07.110 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String' using the name 'UploaderCompany' in request data ...
+2024-05-23 15:09:07.112 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String'.
+2024-05-23 15:09:07.115 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String' using the name 'UploaderLocation' in request data ...
+2024-05-23 15:09:07.119 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String'.
+2024-05-23 15:09:07.122 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String' using the name 'UploaderEmail' in request data ...
+2024-05-23 15:09:07.126 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String'.
+2024-05-23 15:09:07.130 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:09:07.133 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:09:07.136 -04:00 [DBG] Attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:09:07.140 -04:00 [DBG] Done attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:09:07.157 -04:00 [INF] Received backend request to upload photo at 5/23/2024 3:09:07 PM
+2024-05-23 15:09:07.160 -04:00 [INF] Scanning for malware
+2024-05-23 15:09:07.227 -04:00 [INF] ClamAV received request to scan house.jpg
+2024-05-23 15:09:28.273 -04:00 [ERR] System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.CompleteConnectAsync(Task task)
+   at nClam.ClamClient.CreateConnection(TcpClient clam)
+   at nClam.ClamClient.ExecuteClamCommandAsync(String command, CancellationToken cancellationToken, Func`3 additionalCommand)
+   at nClam.ClamClient.SendAndScanFileAsync(Byte[] fileData, CancellationToken cancellationToken)
+   at PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV(IFormFile photo) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 258
+   at PhotoUpload.Controllers.PhotoUploadController.UploadPhoto(UserdataForCreationDTO userData) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 68
+2024-05-23 15:09:28.276 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-23 15:09:28.278 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-05-23 15:09:28.278 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-23 15:09:28.279 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-23 15:09:28.279 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-23 15:09:28.281 -04:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-23 15:09:28.286 -04:00 [INF] Executed action PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService) in 21500.9443ms
+2024-05-23 15:09:28.286 -04:00 [INF] Executed endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:09:28.287 -04:00 [DBG] Connection id "0HN3RBAI36MII" completed keep alive response.
+2024-05-23 15:09:28.289 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/ - 500 null application/json; charset=utf-8 21541.3625ms
+2024-05-23 15:09:32.871 -04:00 [DBG] Connection id "0HN3RBAI36MII" received FIN.
+2024-05-23 15:09:32.874 -04:00 [DBG] Connection id "0HN3RBAI36MII" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 15:09:32.875 -04:00 [DBG] Connection id "0HN3RBAI36MII" disconnecting.
+2024-05-23 15:09:32.877 -04:00 [DBG] Connection id "0HN3RBAI36MII" stopped.
+2024-05-23 15:10:26.421 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" accepted.
+2024-05-23 15:10:26.423 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" started.
+2024-05-23 15:10:26.426 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/ - multipart/form-data; boundary=----formdata-undici-019163838303 11376401
+2024-05-23 15:10:26.431 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/'
+2024-05-23 15:10:26.434 -04:00 [DBG] Endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)' with route pattern 'api/photoupload' is valid for the request path '/api/photoupload/'
+2024-05-23 15:10:26.437 -04:00 [DBG] Request matched endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:10:26.440 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.443 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-23 15:10:26.445 -04:00 [INF] Executing endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:10:26.448 -04:00 [INF] Route matched with {action = "UploadPhoto", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(ImageUpload.Models.UserdataForCreationDTO) on controller PhotoUpload.Controllers.PhotoUploadController (MediaService).
+2024-05-23 15:10:26.453 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-23 15:10:26.457 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-23 15:10:26.459 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-05-23 15:10:26.462 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-23 15:10:26.465 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-05-23 15:10:26.468 -04:00 [DBG] Executing controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:10:26.474 -04:00 [DBG] Executed controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:10:26.476 -04:00 [DBG] Connection id "0HN3RBAI36MIJ", Request id "0HN3RBAI36MIJ:00000001": started reading request body.
+2024-05-23 15:10:26.486 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.492 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.496 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.499 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.504 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.509 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.517 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.521 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.526 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.528 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.533 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.537 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.546 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.550 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.555 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.557 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.562 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.568 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.580 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.595 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.608 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.617 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" paused.
+2024-05-23 15:10:26.626 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" resumed.
+2024-05-23 15:10:26.630 -04:00 [DBG] Connection id "0HN3RBAI36MIJ", Request id "0HN3RBAI36MIJ:00000001": done reading request body.
+2024-05-23 15:10:26.653 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:10:26.658 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' using the name '' in request data ...
+2024-05-23 15:10:26.661 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'Photo' in request data ...
+2024-05-23 15:10:26.664 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-05-23 15:10:26.666 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String' using the name 'UploaderName' in request data ...
+2024-05-23 15:10:26.669 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String'.
+2024-05-23 15:10:26.683 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String' using the name 'UploaderCompany' in request data ...
+2024-05-23 15:10:26.686 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String'.
+2024-05-23 15:10:26.691 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String' using the name 'UploaderLocation' in request data ...
+2024-05-23 15:10:26.696 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String'.
+2024-05-23 15:10:26.699 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String' using the name 'UploaderEmail' in request data ...
+2024-05-23 15:10:26.702 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String'.
+2024-05-23 15:10:26.704 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:10:26.706 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:10:26.708 -04:00 [DBG] Attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:10:26.710 -04:00 [DBG] Done attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:10:26.711 -04:00 [INF] Received backend request to upload photo at 5/23/2024 3:10:26 PM
+2024-05-23 15:10:26.713 -04:00 [INF] Scanning for malware
+2024-05-23 15:10:26.751 -04:00 [INF] ClamAV received request to scan house.jpg
+2024-05-23 15:10:47.761 -04:00 [ERR] System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Net.Sockets.TcpClient.CompleteConnectAsync(Task task)
+   at nClam.ClamClient.CreateConnection(TcpClient clam)
+   at nClam.ClamClient.ExecuteClamCommandAsync(String command, CancellationToken cancellationToken, Func`3 additionalCommand)
+   at nClam.ClamClient.SendAndScanFileAsync(Byte[] fileData, CancellationToken cancellationToken)
+   at PhotoUpload.Controllers.PhotoUploadController.ScanPhotoWithClamAV(IFormFile photo) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 258
+   at PhotoUpload.Controllers.PhotoUploadController.UploadPhoto(UserdataForCreationDTO userData) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 68
+2024-05-23 15:10:47.773 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-23 15:10:47.782 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-05-23 15:10:47.784 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-23 15:10:47.787 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-23 15:10:47.792 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-23 15:10:47.799 -04:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-23 15:10:47.805 -04:00 [INF] Executed action PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService) in 21337.414ms
+2024-05-23 15:10:47.811 -04:00 [INF] Executed endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:10:47.816 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" completed keep alive response.
+2024-05-23 15:10:47.828 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/ - 500 null application/json; charset=utf-8 21401.981ms
+2024-05-23 15:10:52.585 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" received FIN.
+2024-05-23 15:10:52.591 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" disconnecting.
+2024-05-23 15:10:52.597 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 15:10:52.614 -04:00 [DBG] Connection id "0HN3RBAI36MIJ" stopped.
+2024-05-23 15:11:00.120 -04:00 [INF] Application is shutting down...
+2024-05-23 15:11:00.122 -04:00 [DBG] Hosting stopping
+2024-05-23 15:11:00.136 -04:00 [DBG] Hosting stopped
+2024-05-23 15:11:04.649 -04:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-05-23 15:11:04.691 -04:00 [DBG] Hosting starting
+2024-05-23 15:11:04.713 -04:00 [INF] Now listening on: http://localhost:5111
+2024-05-23 15:11:04.715 -04:00 [DBG] Loaded hosting startup assembly MediaService
+2024-05-23 15:11:04.717 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-23 15:11:04.719 -04:00 [INF] Hosting environment: Development
+2024-05-23 15:11:04.721 -04:00 [INF] Content root path: C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend
+2024-05-23 15:11:04.723 -04:00 [DBG] Hosting started
+2024-05-23 15:11:18.576 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" accepted.
+2024-05-23 15:11:18.579 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" started.
+2024-05-23 15:11:18.585 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:18.611 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5111/api/photoupload/ - multipart/form-data; boundary=----formdata-undici-041627008043 11376401
+2024-05-23 15:11:18.624 -04:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-05-23 15:11:18.651 -04:00 [DBG] 1 candidate(s) found for the request path '/api/photoupload/'
+2024-05-23 15:11:18.657 -04:00 [DBG] Endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)' with route pattern 'api/photoupload' is valid for the request path '/api/photoupload/'
+2024-05-23 15:11:18.661 -04:00 [DBG] Request matched endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:11:18.679 -04:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-05-23 15:11:18.682 -04:00 [INF] Executing endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:11:18.713 -04:00 [INF] Route matched with {action = "UploadPhoto", controller = "PhotoUpload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(ImageUpload.Models.UserdataForCreationDTO) on controller PhotoUpload.Controllers.PhotoUploadController (MediaService).
+2024-05-23 15:11:18.722 -04:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-05-23 15:11:18.726 -04:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-05-23 15:11:18.731 -04:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-05-23 15:11:18.736 -04:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-05-23 15:11:18.741 -04:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-05-23 15:11:18.749 -04:00 [DBG] Executing controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:11:19.020 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-05-23 15:11:19.055 -04:00 [DBG] Executed controller factory for controller PhotoUpload.Controllers.PhotoUploadController (MediaService)
+2024-05-23 15:11:19.072 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ", Request id "0HN3RBGG1Q6GJ:00000001": started reading request body.
+2024-05-23 15:11:19.117 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.130 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.148 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.157 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.176 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.197 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.214 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.254 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.322 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.341 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.351 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.357 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.364 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.368 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.374 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.380 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.386 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.391 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.396 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.401 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.407 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.410 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" paused.
+2024-05-23 15:11:19.415 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" resumed.
+2024-05-23 15:11:19.418 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ", Request id "0HN3RBGG1Q6GJ:00000001": done reading request body.
+2024-05-23 15:11:19.433 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:11:19.440 -04:00 [DBG] Attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' using the name '' in request data ...
+2024-05-23 15:11:19.448 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile' using the name 'Photo' in request data ...
+2024-05-23 15:11:19.452 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.Photo' of type 'Microsoft.AspNetCore.Http.IFormFile'.
+2024-05-23 15:11:19.460 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String' using the name 'UploaderName' in request data ...
+2024-05-23 15:11:19.463 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderName' of type 'System.String'.
+2024-05-23 15:11:19.466 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String' using the name 'UploaderCompany' in request data ...
+2024-05-23 15:11:19.469 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderCompany' of type 'System.String'.
+2024-05-23 15:11:19.472 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String' using the name 'UploaderLocation' in request data ...
+2024-05-23 15:11:19.476 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderLocation' of type 'System.String'.
+2024-05-23 15:11:19.478 -04:00 [DBG] Attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String' using the name 'UploaderEmail' in request data ...
+2024-05-23 15:11:19.481 -04:00 [DBG] Done attempting to bind property 'ImageUpload.Models.UserdataForCreationDTO.UploaderEmail' of type 'System.String'.
+2024-05-23 15:11:19.484 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:11:19.486 -04:00 [DBG] Done attempting to bind parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:11:19.490 -04:00 [DBG] Attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO' ...
+2024-05-23 15:11:19.501 -04:00 [DBG] Done attempting to validate the bound parameter 'userData' of type 'ImageUpload.Models.UserdataForCreationDTO'.
+2024-05-23 15:11:19.520 -04:00 [INF] Received backend request to upload photo at 5/23/2024 3:11:19 PM
+2024-05-23 15:11:19.523 -04:00 [INF] Scanning for malware
+2024-05-23 15:11:35.158 -04:00 [INF] Extracting EXIF metadata from photo
+2024-05-23 15:11:35.246 -04:00 [INF] EXIF metadata extracted successfully
+2024-05-23 15:11:35.253 -04:00 [INF] Mapping upload DTO to upload entity
+2024-05-23 15:11:35.273 -04:00 [INF] Creating new upload entity
+2024-05-23 15:11:35.282 -04:00 [INF] Creating upload at 5/23/2024 3:11:35 PM
+2024-05-23 15:11:35.309 -04:00 [DBG] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration changed for 'Core:EnableSensitiveDataLogging'.
+2024-05-23 15:11:35.815 -04:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-05-23 15:11:36.047 -04:00 [DBG] Entity Framework Core 8.0.5 initialized 'MediaServiceContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.5' with options: SensitiveDataLoggingEnabled 
+2024-05-23 15:11:36.107 -04:00 [DBG] 'MediaServiceContext' generated temporary value '-2147482647' for the property 'UploadInfo.UploadId'.
+2024-05-23 15:11:36.289 -04:00 [DBG] Context 'MediaServiceContext' started tracking 'UploadInfo' entity with key '{UploadId: -2147482647}'.
+2024-05-23 15:11:36.297 -04:00 [DBG] SaveChanges starting for 'MediaServiceContext'.
+2024-05-23 15:11:36.304 -04:00 [DBG] DetectChanges starting for 'MediaServiceContext'.
+2024-05-23 15:11:36.325 -04:00 [DBG] DetectChanges completed for 'MediaServiceContext'.
+2024-05-23 15:11:36.445 -04:00 [DBG] Creating DbConnection.
+2024-05-23 15:11:36.544 -04:00 [DBG] Created DbConnection. (98ms).
+2024-05-23 15:11:36.553 -04:00 [DBG] Opening connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-23 15:12:06.484 -04:00 [ERR] An error occurred using the connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-23 15:12:06.516 -04:00 [ERR] An exception occurred in the database while saving changes for context type 'MediaService.DbContexts.MediaServiceContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=206; handshake=237; [Login] initialization=4; authentication=4; [Post-Login] complete=29487; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:c9b4740e-f056-46c5-8638-a8633a515c27
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=206; handshake=237; [Login] initialization=4; authentication=4; [Post-Login] complete=29487; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+ClientConnectionId:c9b4740e-f056-46c5-8638-a8633a515c27
+Error Number:-2,State:0,Class:11
+2024-05-23 15:12:06.576 -04:00 [ERR] Error at 5/23/2024 3:11:35 PM creating upload: Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=206; handshake=237; [Login] initialization=4; authentication=4; [Post-Login] complete=29487; 
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=206; handshake=237; [Login] initialization=4; authentication=4; [Post-Login] complete=29487; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MediaService.Services.UploadInfoRepo.CreateUploadAsync(UploadInfo uploadToCreate) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Services\UploadInfoRepo.cs:line 58
+ClientConnectionId:c9b4740e-f056-46c5-8638-a8633a515c27
+Error Number:-2,State:0,Class:11
+2024-05-23 15:12:06.636 -04:00 [ERR] System.Exception: Error uploading to Azure Blob Storage
+ ---> System.Exception: Error creating upload
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=206; handshake=237; [Login] initialization=4; authentication=4; [Post-Login] complete=29487; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MediaService.Services.UploadInfoRepo.CreateUploadAsync(UploadInfo uploadToCreate) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Services\UploadInfoRepo.cs:line 58
+ClientConnectionId:c9b4740e-f056-46c5-8638-a8633a515c27
+Error Number:-2,State:0,Class:11
+   --- End of inner exception stack trace ---
+   at MediaService.Services.UploadInfoRepo.CreateUploadAsync(UploadInfo uploadToCreate) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Services\UploadInfoRepo.cs:line 73
+   at PhotoUpload.Controllers.PhotoUploadController.StoreUploadData(UploadForCreationDTO uploadForCreationDTO) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 223
+   --- End of inner exception stack trace ---
+   at PhotoUpload.Controllers.PhotoUploadController.StoreUploadData(UploadForCreationDTO uploadForCreationDTO) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 241
+   at PhotoUpload.Controllers.PhotoUploadController.UploadPhoto(UserdataForCreationDTO userData) in C:\Users\wchesson\chessoncode\MediaServiceGA811\image-upload-backend\Controllers\PhotoUploadController.cs:line 95
+2024-05-23 15:12:06.672 -04:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-05-23 15:12:06.683 -04:00 [DBG] No information found on request to perform content negotiation.
+2024-05-23 15:12:06.686 -04:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-05-23 15:12:06.690 -04:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-05-23 15:12:06.693 -04:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-05-23 15:12:06.698 -04:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-23 15:12:06.729 -04:00 [INF] Executed action PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService) in 47977.5978ms
+2024-05-23 15:12:06.739 -04:00 [INF] Executed endpoint 'PhotoUpload.Controllers.PhotoUploadController.UploadPhoto (MediaService)'
+2024-05-23 15:12:06.747 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" completed keep alive response.
+2024-05-23 15:12:06.758 -04:00 [DBG] 'MediaServiceContext' disposed.
+2024-05-23 15:12:06.771 -04:00 [DBG] Disposing connection to database 'In8Ops' on server 'tcp:ga811-prod.database.windows.net,1433'.
+2024-05-23 15:12:06.784 -04:00 [DBG] Disposed connection to database '' on server '' (6ms).
+2024-05-23 15:12:06.790 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5111/api/photoupload/ - 500 null application/json; charset=utf-8 48180.7417ms
+2024-05-23 15:12:10.937 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" received FIN.
+2024-05-23 15:12:10.938 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-05-23 15:12:10.940 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" disconnecting.
+2024-05-23 15:12:10.941 -04:00 [DBG] Connection id "0HN3RBGG1Q6GJ" stopped.
+2024-05-23 15:13:37.167 -04:00 [INF] Application is shutting down...
+2024-05-23 15:13:37.168 -04:00 [DBG] Hosting stopping
+2024-05-23 15:13:37.171 -04:00 [DBG] Hosting stopped

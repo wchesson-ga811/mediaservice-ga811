@@ -1,16 +1,11 @@
-using System.Diagnostics.CodeAnalysis;
 using AutoMapper;
 using Azure.Identity;
 using Azure.Storage.Blobs;
-using Azure.Storage.Blobs.Models;
 using ImageUpload.Entities;
 using ImageUpload.Models;
 using MediaService.Services;
 using MetadataExtractor;
-using MetadataExtractor.Formats.Tiff;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.Storage;
-using Microsoft.Azure.Storage.Blob;
 using nClam;
 
 namespace PhotoUpload.Controllers
@@ -24,18 +19,18 @@ namespace PhotoUpload.Controllers
 
         private readonly IMapper _mapper;
 
-        ClamClient clam = new ClamClient("localhost", 3310);
+        ClamClient clam = new ClamClient("20.127.158.138", 3310);
 
         private readonly IUploadInfoRepo _uploadInfoRepo;
 
         public PhotoUploadController(
-            // IConfiguration configuration,
+            IConfiguration configuration,
             ILogger<PhotoUploadController> logger,
             IMapper mapper,
             IUploadInfoRepo uploadInfoRepo
         )
         {
-            // _configuration = configuration;
+            _configuration = configuration;
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _uploadInfoRepo =
@@ -60,8 +55,6 @@ namespace PhotoUpload.Controllers
             {
                 _logger.LogInformation($"Received backend request to upload photo at {now}");
 
-                // _logger.LogInformation("Scanning for malware");
-
                 if (photo == null || photo.Length == 0)
                 {
                     return BadRequest("No photo found");
@@ -71,48 +64,16 @@ namespace PhotoUpload.Controllers
                     return BadRequest("No user data found");
                 }
 
-                IActionResult isFileClean = await ScanPhotoWithClamAV(photo);
+                _logger.LogInformation("Scanning for malware");
+                // IActionResult isFileClean = await ScanPhotoWithClamAV(photo);
 
-                if (isFileClean is OkObjectResult)
-                {
+                // if (isFileClean is OkObjectResult)
+                // {
                     // Create a unique name for the photo
                     string guidFileName =
                         Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
 
                     var uploadToBlob = await UploadBlob(photo, guidFileName);
-
-                    // //Retrieve the connection string for the Azure Blob Storage
-                    // string connectionString =
-                    //     _configuration.GetConnectionString("ConnectionStrings:AzureMediaService")
-                    //     ?? string.Empty;
-
-                    // var blobServiceClient = new BlobServiceClient(
-                    //     new Uri("https://mediaservicega811.blob.core.windows.net/"),
-                    //     new DefaultAzureCredential()
-                    // );
-
-                    // var containerClient = blobServiceClient.GetBlobContainerClient("images");
-
-                    // //save original file name
-                    // string originalFileName = photo.FileName;
-                    // Console.WriteLine($"Original file name: {originalFileName}");
-
-                    // await using var stream = photo.OpenReadStream();
-                    // var uploaded = await containerClient.UploadBlobAsync(guidFileName, stream);
-
-                    // BlobClient blobClient;
-
-                    // if (uploaded != null)
-                    // {
-                    //     blobClient = containerClient.GetBlobClient(guidFileName);
-                    //     Console.WriteLine($"Uploaded photo to {blobClient.Uri} at {now}");
-                    // }
-                    // else
-                    // {
-                    //     return BadRequest("Backend: failed to upload photo");
-                    // }
-
-                    // Extract EXIF metadata from the photo
 
                     Dictionary<string, string> exifMetadata;
                     if (uploadToBlob is OkObjectResult)
@@ -152,19 +113,19 @@ namespace PhotoUpload.Controllers
 
                     // return Ok(exifMetadata);
                     // }
-                }
-                else if (isFileClean is UnauthorizedObjectResult)
-                {
-                    return BadRequest(
-                        "There was malware detected in your photo. Please submit another photo to complete your request."
-                    );
-                }
-                else
-                {
-                    return BadRequest(
-                        "There was an error scanning your photo for malware. Please try another photo or at a later time."
-                    );
-                }
+                // }
+                // else if (isFileClean is UnauthorizedObjectResult)
+                // {
+                //     return BadRequest(
+                //         "There was malware detected in your photo. Please submit another photo to complete your request."
+                //     );
+                // }
+                // else
+                // {
+                //     return BadRequest(
+                //         "There was an error scanning your photo for malware. Please try another photo or at a later time."
+                //     );
+                // }
 
                 return Ok("Photo uploaded successfully");
 
@@ -180,8 +141,8 @@ namespace PhotoUpload.Controllers
             }
         }
 
-        [HttpPost("upload-blob")]
-        public async Task<IActionResult> UploadBlob(IFormFile photo, string guid)
+        // [HttpPost("upload-blob")]
+        private async Task<IActionResult> UploadBlob(IFormFile photo, string guid)
         {
             DateTime now = DateTime.Now;
 
@@ -216,8 +177,8 @@ namespace PhotoUpload.Controllers
             }
         }
 
-        [HttpPost("extract-exif-metadata")]
-        public async Task<Dictionary<string, string>> ExtractExifMetadata(IFormFile photo)
+        // [HttpPost("extract-exif-metadata")]
+        private async Task<Dictionary<string, string>> ExtractExifMetadata(IFormFile photo)
         {
             // return Ok();
             _logger.LogInformation("Extracting EXIF metadata from photo");
@@ -230,20 +191,6 @@ namespace PhotoUpload.Controllers
                 // Read metadata from the stream
                 IEnumerable<MetadataExtractor.Directory> directories =
                     ImageMetadataReader.ReadMetadata(stream);
-
-                // directories
-                //     .SelectMany(directory => directory.Tags)
-                //     .ToList()
-                //     .ForEach(tag =>
-                //     {
-                //         string snakeCaseName = tag.Name.Replace(" ", ""); // Trims white spaces and other whitespace characters
-
-                //         // _logger.LogInformation($"{snakeCaseName}");
-                //     });
-
-                // Extract EXIF tags and values
-                // var exifMetadata = directories
-                //     .SelectMany(directory => directory.Tags)
 
                 var exifMetadata = directories
                     .SelectMany(directory => directory.Tags)
@@ -259,8 +206,8 @@ namespace PhotoUpload.Controllers
             }
         }
 
-        [HttpPost("store-upload-data")]
-        public async Task<ActionResult<UploadForCreationDTO>> StoreUploadData(
+        // [HttpPost("store-upload-data")]
+        private async Task<ActionResult<UploadForCreationDTO>> StoreUploadData(
             UploadForCreationDTO uploadForCreationDTO
         )
         {
